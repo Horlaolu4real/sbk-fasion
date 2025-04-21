@@ -5,13 +5,17 @@
 
 .content {
   width: 100%;
-  background-image: url("../../../../assest//image/Group\ 1000005945.svg");
-  background-repeat: no-repeat;
-  background-position: right 60px;
-  // background-size: cover;
-  // background-position: right;
-  background-size: auto;
+  position: relative;
+  padding-bottom: 6rem;
+  // background-color: #FAFAFA;
 
+  .rotate {
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    top: 80px;
+
+  }
   .flx {
     width: 100%;
     display: flex;

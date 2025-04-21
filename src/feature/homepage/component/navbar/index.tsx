@@ -11,27 +11,35 @@ import styles from "./styles.module.scss";
 const Navbar = () => {
   return (
     <div className={styles.content}>
+      <Image src={navImage} alt="image" className={styles.img} />
       <div className={styles.Navbar}>
         <div className={styles.link}>
           <Link href={"/"}>
             <Image src={frames} alt="frame" />
           </Link>
-          <Image src={navImage} alt="image" className={styles.img} />
         </div>
 
         <div className={styles.list}>
           <ul>
-            <li>
-              <Link href={"/"}>Home</Link>
+            <li className={styles.home}>
+              <Link href={"/"}>
+                <p>Home</p>
+              </Link>
             </li>
-            <li>
-              <Link href={"/categories"}>Categories</Link>
+            <li className={styles.categories}>
+              <Link href={"/categories"}>
+                <p>Categories</p>
+              </Link>
             </li>
-            <li>
-              <Link href={"/featured Products"}>Featured Products</Link>
+            <li className={styles.product}>
+              <Link href={"/featured Products"}>
+                <p>Featured Products</p>
+              </Link>
             </li>
-            <li>
-              <Link href={"/contact"}>Contact us</Link>
+            <li className={styles.contact}>
+              <Link href={"/contact"}>
+                <p>Contact us</p>
+              </Link>
             </li>
           </ul>
         </div>
@@ -40,7 +48,7 @@ const Navbar = () => {
           <div className={styles.inputField}>
             <input
               type="text"
-              placeholder="What are you looking for ?"
+              placeholder="What are you looking for ? "
               className={styles.field}
             />
             <div className={styles.searchIcon}>

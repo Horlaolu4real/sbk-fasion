@@ -3,40 +3,81 @@
   // // background-position: center;
   // // background-size: cover;
   // background-repeat: no-repeat;
+  position: relative;
+  .img {
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    top: 0;
+    transform: none !important;
+  }
   .Navbar {
     width: 100%;
-    max-width: 1321px;
+    // max-width: 1321px;
     // height: 71.66px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 50px;
-    .link {
-      position: relative;
-      display: flex;
-      align-self: flex-start;
-      .img {
-        position: absolute;
-        left: 0;
-        z-index: -1;
-        top: 0;
-        transform: none !important;
-      }
-    }
+
     .list {
       width: 446px;
+      // height: 23px;
+      height: 26px;
 
       ul {
         list-style: none;
         display: flex;
         gap: 20px;
 
-        li {
-          font-family: Poppins;
-          font-weight: 400;
-          font-size: 20px;
-          line-height: 24px;
-          letter-spacing: 0%;
+        .home {
+          width: 48px;
+          height: 24px;
+          p {
+            font-family: Poppins;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0%;
+          }
+        }
+        .categories {
+          width: 89px;
+          height: 24px;
+      
+          p {
+            font-family: Poppins;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0%;
+          }
+        }
+        .product {
+          width: 148px;
+          height: 24px;
+       
+          p {
+            font-family: Poppins;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0%;
+
+          }
+        }
+        .contact {
+          width: 88px;
+          height: 24px;
+   
+          p {
+            font-family: Poppins;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0%;
+
+          }
         }
       }
     }
@@ -52,9 +93,11 @@
 
         .field {
           border-radius: 4px;
-          padding: 7px 20px 7px 12px;
+          width: 243px;
+          padding: 7px 12px 7px 20px;
           color: #000;
           border: 1px solid #f2f2f2;
+          background-color: #f5f5f5;
           outline: none;
           opacity: 0.5;
           font-family: Poppins;

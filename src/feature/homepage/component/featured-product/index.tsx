@@ -7,6 +7,7 @@ import imgFive from "@/assest/image/Rectangle 30.svg";
 import imgSix from "@/assest/image/Rectangle 31.svg";
 import Image from "next/image";
 import styles from "./styles.module.scss";
+import rotateImg from "@/assest/image/Group 1000005945.svg";
 
 export const featuredProducts = [
   {
@@ -33,6 +34,7 @@ const FeaturedProduct = () => {
   return (
     <>
       <div className={styles.content}>
+        <Image src={rotateImg} alt="rt" className={styles.rotate} />
         <div className={styles.flx}>
           {featuredProducts.map((prod, index) => (
             <div key={index}>

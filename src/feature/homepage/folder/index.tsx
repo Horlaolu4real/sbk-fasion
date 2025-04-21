@@ -15,17 +15,17 @@ import slideThree from "@/assest/image/slide/Frame 1686562452.svg";
 
 export const product = [
   {
-    img: <Image src={productOne} alt="one" />,
+    img: <Image src={productTwo} alt="one" />,
     txt: "Bvlgari Hedge Slide",
     amount: "N48,750",
   },
   {
-    img: <Image src={productTwo} alt="two" />,
+    img: <Image src={productThree} alt="two" />,
     txt: "Bvlgari Hedge Slide",
     amount: "N48,750",
   },
   {
-    img: <Image src={productThree} alt="three" />,
+    img: <Image src={productEight} alt="three" />,
     txt: "Bvlgari Hedge Slide",
     amount: "N48,750",
   },
@@ -45,12 +45,12 @@ export const product = [
     amount: "N48,750",
   },
   {
-    img: <Image src={productSeven} alt="seven" />,
+    img: <Image src={productOne} alt="seven" />,
     txt: "Bvlgari Hedge Slide",
     amount: "N48,750",
   },
   {
-    img: <Image src={productEight} alt="eight" />,
+    img: <Image src={productSeven} alt="eight" />,
     txt: "Bvlgari Hedge Slide",
     amount: "N48,750",
   },

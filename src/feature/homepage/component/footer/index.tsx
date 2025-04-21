@@ -11,6 +11,7 @@ import {
   LinkdenIcon,
   TwitterIcon,
 } from "@/assest/icon";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -30,7 +31,10 @@ const Footer = () => {
         <div className={styles.contentTwo}>
           <div className={styles.firstPara}>
             <div className={styles.flx}>
-              <Image src={font} alt="fnt" />
+              <Link href={"/"}>
+                <Image src={font} alt="fnt" />
+              </Link>
+
               <div className={styles.input}>
                 <input type="text" placeholder="Enter your email" />
                 <button className={styles.btn}>
