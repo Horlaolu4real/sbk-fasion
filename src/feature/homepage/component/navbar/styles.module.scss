@@ -1,0 +1,84 @@
+.content {
+  // background-image: url("../../../../assest/image/Group\ 1000005944.svg");
+  // // background-position: center;
+  // // background-size: cover;
+  // background-repeat: no-repeat;
+  .Navbar {
+    width: 100%;
+    max-width: 1321px;
+    // height: 71.66px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    .link {
+      position: relative;
+      display: flex;
+      align-self: flex-start;
+      .img {
+        position: absolute;
+        left: 0;
+        z-index: -1;
+        top: 0;
+        transform: none !important;
+      }
+    }
+    .list {
+      width: 446px;
+
+      ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+
+        li {
+          font-family: Poppins;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 24px;
+          letter-spacing: 0%;
+        }
+      }
+    }
+    .input {
+      display: flex;
+      gap: 26px;
+      align-items: center;
+
+      .inputField {
+        position: relative;
+        width: 100%;
+        //   max-width: 243px;
+
+        .field {
+          border-radius: 4px;
+          padding: 7px 20px 7px 12px;
+          color: #000;
+          border: 1px solid #f2f2f2;
+          outline: none;
+          opacity: 0.5;
+          font-family: Poppins;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 18px;
+          letter-spacing: 0%;
+        }
+        .searchIcon {
+          position: absolute;
+
+          right: 18px;
+          width: 16px;
+          height: 16px;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+      .icon {
+        display: flex;
+        gap: 16px;
+        width: 79px;
+        height: 32px;
+      }
+    }
+  }
+}

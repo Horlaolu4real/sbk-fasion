@@ -1,0 +1,167 @@
+.wrapper {
+  width: 100%;
+  height: 727px;
+  .contentOne {
+    background-image: url("../../../../../public/footerImage.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.9px;
+    width: 100%;
+    height: 498px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    .center_align {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 1056px;
+      height: 286px;
+      gap: 28px;
+      p {
+        // width: 100%;
+        // height: 23px;
+        font-family: Roboto Serif;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        color: #fff;
+      }
+      .txt {
+        width: 1056px;
+        height: 150px;
+        h1 {
+          font-family: Roboto Serif;
+          font-weight: 700;
+          font-size: 64px;
+          line-height: 100%;
+          letter-spacing: 0%;
+          text-align: center;
+          text-transform: capitalize;
+          color: #ffffff;
+        }
+      }
+      button {
+        width: 162px;
+        height: 43px;
+        border-radius: 15px;
+        padding: 10px;
+        outline: none;
+        background-color: #db5825;
+        border: 1px solid #db5825;
+        p {
+          width: 142px;
+          height: 22px;
+          font-family: Manrope;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 100%;
+          letter-spacing: 0%;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+  .contentTwo {
+    background-color: #33160a;
+    height: 229px;
+    width: 100%;
+    display: flex;
+    // align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    // justify-content: center;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    flex-direction: column;
+    gap: 40px;
+    .firstPara {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      .flx {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .input {
+          position: relative;
+          input {
+            width: 353px;
+            height: 58px;
+            border-radius: 10px;
+            border: 1px solid #d2d2d2;
+            padding: 6px 12px 6px 18px;
+            background-color: #33160a;
+            font-family: Open Sans;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 28px;
+            letter-spacing: 0%;
+          }
+          .btn {
+            position: absolute;
+            // left: 2px;
+            // top: 3px;
+            left: 253px;
+
+            top: 4.5px;
+            padding: 6px 12px 6px 12px;
+            width: 98px;
+            height: 50px;
+            background-color: #db5825;
+            border-radius: 6px;
+            p {
+              width: 74px;
+              height: 29px;
+              font-family: Open Sans;
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 29px;
+              letter-spacing: 0%;
+              text-align: center;
+              vertical-align: middle;
+              color: #fff;
+            }
+          }
+        }
+      }
+      .icon {
+        display: flex;
+        width: 171px;
+        height: 28px;
+        gap: 22.5px;
+      }
+    }
+    p {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      height: 23px;
+      color: #fff;
+      font-family: Roberto Serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 145%;
+      letter-spacing: 0%;
+      text-align: center;
+      text-decoration: none;
+      span {
+        font-family: Roberto Serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 145%;
+        letter-spacing: 0%;
+        text-align: center;
+        text-decoration: underline;
+        text-decoration-style: solid;
+        text-decoration-thickness: 0%;
+        text-decoration-skip-ink: auto;
+        color: #b1b1b1;
+      }
+    }
+  }
+}

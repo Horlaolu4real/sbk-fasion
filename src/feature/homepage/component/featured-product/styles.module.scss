@@ -1,0 +1,25 @@
+// background-image: url("../../../../assest/image/Group\ 1000005944.svg");
+// //   background-position: center;
+// //   background-size: cover;
+//   background-repeat: no-repeat;
+
+.content {
+  width: 100%;
+  background-image: url("../../../../assest//image/Group\ 1000005945.svg");
+  background-repeat: no-repeat;
+  background-position: right 60px;
+  // background-size: cover;
+  // background-position: right;
+  background-size: auto;
+
+  .flx {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    margin-bottom: 20px;
+  }
+}
