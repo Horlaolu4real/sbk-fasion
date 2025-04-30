@@ -1,0 +1,228 @@
+.wrapper {
+  width: 100%;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  .checkOut {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    p {
+      font-family: Open Sans;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 24px;
+      letter-spacing: 0%;
+      text-align: center;
+    }
+  }
+  .tableGrid {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+    width: 100%;
+    height: 438px;
+    .row {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr 2fr;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
+    .header {
+      padding: 14px 18px 14px 18px;
+      height: 75px;
+      background-color: #fafafa;
+      .product {
+        padding: 10px;
+        p {
+          font-family: Open Sans;
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 100%;
+          letter-spacing: 0%;
+          //   text-align: center;
+          //   vertical-align: middle;
+        }
+      }
+      .size {
+        padding: 10px;
+        p {
+          font-family: Open Sans;
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 100%;
+          letter-spacing: 0%;
+          //   text-align: center;
+          //   vertical-align: middle;
+        }
+      }
+      .quantity {
+        padding: 10px;
+        p {
+          font-family: Open Sans;
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 100%;
+          letter-spacing: 0%;
+          //   text-align: center;
+          //   vertical-align: middle;
+        }
+      }
+      .price {
+        padding: 10px;
+        p {
+          font-family: Open Sans;
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 100%;
+          letter-spacing: 0%;
+          //   text-align: center;
+          //   vertical-align: middle;
+        }
+      }
+    }
+    .mapClass {
+      .map_row {
+        padding: 14px 18px 14px 18px;
+        box-shadow: 0px 4px 4px 0px #0000000d;
+        height: 100px;
+        gap: 10px;
+        background-color: #fff;
+        .flx {
+          display: flex;
+          align-items: center;
+          gap: 7px;
+          p {
+            font-family: Open Sans;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 100%;
+            letter-spacing: 0%;
+          }
+        }
+        .size {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          h3 {
+            font-family: Open Sans;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 100%;
+            letter-spacing: 0%;
+            color: #7a7a7a;
+          }
+        }
+        .btns {
+          display: flex;
+          align-items: center;
+          width: 84px;
+          height: 28px;
+          padding-top: 8px;
+          padding-right: 19px;
+          padding-bottom: 8px;
+          padding-left: 19px;
+          gap: 7px;
+          border-radius: 9px;
+          background-color: #ebebeb;
+          .minus {
+            display: flex;
+            align-items: center;
+          }
+          .plus {
+            display: flex;
+            align-items: center;
+          }
+        }
+        .price {
+          font-family: Open Sans;
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 100%;
+          letter-spacing: 0%;
+          //   text-align: center;
+          //   vertical-align: middle;
+          color: #7a7a7a;
+        }
+      }
+    }
+  }
+  .thirdRow {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 202px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    .headers {
+      display: flex;
+      padding: 10px;
+      gap: 10px;
+      align-items: center;
+      justify-content: flex-start;
+
+      p {
+        font-family: Open Sans;
+        font-weight: 600;
+        // font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 0%;
+      }
+    }
+    .modal {
+      padding: 14px 18px 18px 14px;
+      width: 397px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0px 3px 4px 0px #0000000d;
+      margin-bottom: 20px;
+
+      gap: 12px;
+      .space {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        p {
+          font-family: Open Sans;
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 100%;
+          letter-spacing: 0%;
+          color: #8e8e8e;
+        }
+        .dark {
+          font-family: Open Sans;
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 100%;
+          letter-spacing: 0%;
+          color: #000;
+        }
+      }
+      .btn {
+        width: 361px;
+        height: 56px;
+        padding-top: 16px;
+        padding-right: 48px;
+        padding-bottom: 16px;
+        padding-left: 48px;
+        // gap: 10px;
+        border-radius: 4px;
+        background-color: #db5825;
+        border: 0.5px solid #db5825;
+        p {
+          font-family: Open Sans;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 24px;
+          letter-spacing: 0%;
+          color: #fafafa;
+        }
+      }
+    }
+  }
+}

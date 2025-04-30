@@ -1,0 +1,133 @@
+.wrapper {
+  width: 100%;
+  height: fit-content;
+  .header {
+    position: relative;
+    width: 100%;
+    height: 275px;
+    opacity: 90%;
+    padding-bottom: 3rem;
+
+    .image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .alignCenter {
+      position: absolute;
+      top: 50%;
+      text-align: center;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      flex-direction: column;
+      gap: 41px;
+      h1 {
+        font-family: Roboto Serif;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        // text-align: center;
+      }
+      p {
+        width: 340px;
+        height: 46px;
+        font-family: Roboto Serif;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        text-align: center;
+        color: #1d1d1d;
+      }
+    }
+  }
+  .icon {
+    margin-left: 60px;
+  }
+
+  .delete_product_catalogue {
+    display: flex;
+    flex-direction: column;
+    padding: 45px 60px 60px 60px;
+    .product_design {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+      .product {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        border-radius: 8px;
+        .imgHandle {
+          width: 100%;
+          height: 320px;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 8px 8px 0 0;
+          }
+        }
+        .downDesign {
+          width: 100%;
+          height: 161px;
+          padding: 15px 10px 30px 10px;
+          background-color: #f6f4f2;
+          .firstContent {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+
+            p {
+              font-family: Open Sans;
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 100%;
+            }
+
+            h3 {
+              font-family: Open Sans;
+              font-weight: 500;
+              font-size: 20px;
+              line-height: 100%;
+            }
+          }
+
+          .last {
+            display: flex;
+            gap: 12px;
+            flex-direction: column;
+
+            .btn {
+              width: 96px;
+              height: 30px;
+              padding-top: 6px;
+              padding-right: 10px;
+              padding-bottom: 6px;
+              padding-left: 10px;
+              border-radius: 30px;
+              background-color: #db5825;
+              outline: none;
+              border: 1px solid #db5825;
+              p {
+                width: 76px;
+                height: 19px;
+                font-family: Open Sans;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 100%;
+                letter-spacing: 0%;
+                color: #fff;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

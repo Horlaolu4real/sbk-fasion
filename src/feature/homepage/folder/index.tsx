@@ -9,9 +9,9 @@ import productEight from "@/assest/image/product/Frame 1686562430.svg";
 
 import Image from "next/image";
 
-import slideOne from "@/assest/image/slide/Frame 1686562450.svg";
-import slideTwo from "@/assest/image/slide/Frame 1686562451.svg";
-import slideThree from "@/assest/image/slide/Frame 1686562452.svg";
+import slideOne from "@/assest/image/slide/Frame 1686562450 (2).svg";
+import slideTwo from "@/assest/image/slide/Frame 1686562451 (1).svg";
+import slideThree from "@/assest/image/slide/Frame 1686562452 (1).svg";
 
 export const product = [
   {

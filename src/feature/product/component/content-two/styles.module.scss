@@ -1,0 +1,112 @@
+.wrapper {
+  //   padding-right: 60px;
+  //   padding-left: 60px;
+  //   height: 690px;
+  width: 100%;
+  margin-bottom: 60px;
+  .contentWrapper {
+    padding: 20px 60px 20px 60px;
+    display: flex;
+    gap: 211px;
+    height: 684px;
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      gap: 34px;
+      h3 {
+        font-family: Roboto Serif;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        vertical-align: middle;
+      }
+      .wrappers {
+        height: 615px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        .gap {
+          height: 125px;
+          .txtSheet {
+            display: flex;
+            gap: 15px;
+            .card {
+              display: flex;
+              flex-direction: column;
+              gap: 20px;
+              .first {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                .nameTag {
+                  display: flex;
+                  gap: 19px;
+                  align-items: center;
+                  h3 {
+                    font-family: Open Sans;
+                    font-weight: 400;
+                    font-size: 24px;
+                    line-height: 24px;
+                    letter-spacing: 0%;
+                    height: 24px;
+                  }
+                  p {
+                    height: 24px;
+                    font-family: Open Sans;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 24px;
+                    letter-spacing: 0%;
+                    color: #7b7b7b;
+                  }
+                }
+              }
+              .second {
+                width: 515px;
+                height: 48px;
+                p {
+                  font-family: Open Sans;
+                  font-weight: 600;
+                  font-size: 16px;
+                  line-height: 24px;
+                  letter-spacing: 0%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .contentTwo {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      height: 296px;
+      h3 {
+        font-family: Roboto Serif;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 100%;
+        letter-spacing: 0%;
+      }
+      .ratingStyle {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        .reviewLine {
+          display: flex;
+          flex-direction: column;
+          gap: 19px;
+          .line {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+          }
+        }
+      }
+    }
+  }
+}

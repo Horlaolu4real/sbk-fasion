@@ -30,30 +30,147 @@
   }
   .container {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    // align-items: center;
+    // justify-content: center;
+    padding-left: 60px;
+    padding-right: 60px;
     flex-direction: column;
     margin: 0 auto;
     gap: 10px;
+    width: 100%;
+
+    .img {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      .imag {
+        position: relative;
+        width: 100%;
+        height: 458px;
+        object-fit: cover;
+        border-radius: 12px;
+      }
+      .btns {
+        position: absolute;
+        top: 80%;
+        display: flex;
+        transform: translateX(-50%);
+        left: 50%;
+        gap: 12px;
+        align-items: center;
+        justify-content: center;
+        background-color: #ffffffcc;
+        padding: 6px 7px 6px 7px;
+        border-radius: 30px;
+        box-shadow: #525150;
+
+        .btnOne {
+          width: 111px;
+          height: 38px;
+          border-radius: 30px;
+          border: 1px solid #ffffffcc;
+
+          &:hover {
+            background-color: #525150;
+            border: 0px;
+            outline: none;
+          }
+
+          p {
+            font-family: Open Sans;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 100%;
+            letter-spacing: 0%;
+            color: #181817;
+            &:hover {
+              color: #ffffff;
+            }
+          }
+        }
+
+        .btnTwo {
+          width: 111px;
+          height: 38px;
+          border-radius: 30px;
+          border: 1px solid #ffffffcc;
+
+          &:hover {
+            background-color: #525150;
+            border: 0px;
+            outline: none;
+          }
+
+          p {
+            font-family: Open Sans;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 100%;
+            letter-spacing: 0%;
+            color: #181817;
+            &:hover {
+              color: #ffffff;
+            }
+          }
+        }
+        .btnThree {
+          width: 111px;
+          height: 38px;
+          border-radius: 30px;
+          border: 1px solid #ffffffcc;
+
+          &:hover {
+            background-color: #525150;
+            border: 0px;
+
+            outline: none;
+          }
+
+          p {
+            font-family: Open Sans;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 100%;
+            letter-spacing: 0%;
+            color: #181817;
+            &:hover {
+              color: #ffffff;
+            }
+          }
+        }
+      }
+    }
 
     .product {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       grid-template-rows: repeat(2, 1fr);
-      gap: 18px;
-      padding-bottom: 3rem;
+      gap: 26px;
+
+      padding-bottom: 1rem;
       .content {
-        width: 316px;
-        height: 481px;
+        width: 100%;
+        height: 100%;
+        .imag {
+          width: 100%;
+          height: 320px;
+          img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            border-radius: 8px 8px 0px 0px;
+          }
+        }
 
         .downwardDesign {
           width: 100%;
-          height: 2;
+          height: 161px;
           background-color: #fafafa;
           display: flex;
           gap: 4px;
           flex-direction: column;
           padding: 10px 0px 20px 10px;
+          border-radius: 0px 0px 8px 8px;
           .text {
             display: flex;
             flex-direction: column;
@@ -90,9 +207,7 @@
               padding-left: 10px;
               border-radius: 30px;
               border: 0.5px solid #db5825;
-              //   &:hover {
-              //     transform: rotate(180deg);
-              //   }
+
               p {
                 width: 71px;
                 height: 19px;
@@ -133,17 +248,29 @@
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       grid-template-rows: repeat(1, 1fr);
-      gap: 26px;
+      gap: 8px;
+
       .wrapper {
-        width: 422px;
-        height: 752px;
+        width: 100%;
+        height: 100%;
         gap: 22px;
         display: flex;
         flex-direction: column;
+        .imag {
+          width: 100%;
+          height: 628px;
+          img {
+            width: 90%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
         .text {
           display: flex;
           flex-direction: column;
           gap: 12px;
+          width: 100%;
+          height: 80px;
           h1 {
             width: 422px;
             height: 50px;
