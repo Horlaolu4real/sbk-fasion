@@ -38,7 +38,7 @@ const ContentOne = () => {
   });
 
   const [isClicked, setIsClicked] = useState(false);
-  const [isClick, setIsClick] = useState(false);
+  // const [isClick, setIsClick] = useState(false);
   const completed = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
 
@@ -76,7 +76,6 @@ const ContentOne = () => {
           <Link href={"./calculate"}>
             <CheckBackIcon />
           </Link>
-
           <p>Billing details</p>
         </div>
         <div className={styles.wrappers}>
@@ -242,16 +241,7 @@ const ContentOne = () => {
             </div>
             <div className={styles.forthRow}>
               <div className={styles.contained}>
-                <div
-                  onClick={() => setIsClick(true)}
-                  style={{
-                    width: "15px",
-                    height: "15px",
-                    border: "1px solid #000",
-                    backgroundColor: isClick ? "black" : "#fff",
-                    cursor: "pointer",
-                  }}
-                ></div>
+                <input type="checkbox" />
                 <p>Save this information for next time</p>
               </div>
             </div>
@@ -336,9 +326,9 @@ const ContentOne = () => {
             </div>
             <div className={styles.btnSpace}>
               <div className={styles.space}>
-                <button className={styles.code}>
+                <div className={styles.code}>
                   <p>Coupon Code</p>
-                </button>
+                </div>
                 <button className={styles.apply}>
                   <p>Apply Coupon</p>
                 </button>

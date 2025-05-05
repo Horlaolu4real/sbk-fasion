@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./styles.module.scss";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -19,7 +20,9 @@ const Hero = () => {
             </p>
             <div className={styles.btnField}>
               <button className={styles.btn}>
-                <p>Shop Now</p>
+                <Link href={'./detail'}>
+                  <p>Shop Now</p>
+                </Link>
               </button>
             </div>
           </div>

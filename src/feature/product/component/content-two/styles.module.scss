@@ -1,19 +1,31 @@
 .wrapper {
-  //   padding-right: 60px;
-  //   padding-left: 60px;
-  //   height: 690px;
   width: 100%;
   margin-bottom: 60px;
+  @media (max-width: 768px) {
+  }
   .contentWrapper {
     padding: 20px 60px 20px 60px;
     display: flex;
     gap: 211px;
     height: 684px;
+    @media (max-width: 768px) {
+      padding: 16px 20px;
+      gap: 20px;
+      height: 100%;
+      flex-direction: column;
+    }
 
     .content {
       display: flex;
       flex-direction: column;
       gap: 34px;
+      @media (max-width: 768px) {
+        gap: 22px;
+        padding: 0px 8px 0px 8px;
+        width: 100%;
+        max-width: 390px;
+        height: 100%;
+      }
       h3 {
         font-family: Roboto Serif;
         font-weight: 700;
@@ -21,30 +33,55 @@
         line-height: 100%;
         letter-spacing: 0%;
         vertical-align: middle;
+        @media (max-width: 768px) {
+          font-family: Open Sans;
+          font-weight: 700;
+          font-size: 21.93px;
+          line-height: 100%;
+          letter-spacing: 0%;
+          vertical-align: middle;
+        }
       }
       .wrappers {
         height: 615px;
         display: flex;
         flex-direction: column;
         gap: 40px;
+        @media (max-width: 768px) {
+          width: 100%;
+          height: 100%;
+          gap: 28px;
+        }
 
         .gap {
           height: 125px;
+          @media (max-width: 768px) {
+          }
           .txtSheet {
             display: flex;
             gap: 15px;
+            @media (max-width: 768px) {
+            }
             .card {
               display: flex;
               flex-direction: column;
               gap: 20px;
+              @media (max-width: 768px) {
+                gap: 13.71px;
+              }
               .first {
                 display: flex;
                 flex-direction: column;
                 gap: 10px;
+                @media (max-width: 768px) {
+                  gap: 6.85px;
+                }
                 .nameTag {
                   display: flex;
                   gap: 19px;
                   align-items: center;
+                  @media (max-width: 768px) {
+                  }
                   h3 {
                     font-family: Open Sans;
                     font-weight: 400;
@@ -52,6 +89,11 @@
                     line-height: 24px;
                     letter-spacing: 0%;
                     height: 24px;
+                    @media (max-width: 768px) {
+                      font-weight: 500;
+                      font-size: 16px;
+                      line-height: 16.45px;
+                    }
                   }
                   p {
                     height: 24px;
@@ -61,18 +103,34 @@
                     line-height: 24px;
                     letter-spacing: 0%;
                     color: #7b7b7b;
+                    @media (max-width: 768px) {
+                      font-family: Open Sans;
+                      font-weight: 400;
+                      font-size: 10px;
+                      line-height: 16.45px;
+                      letter-spacing: 0%;
+                      color: #999;
+                    }
                   }
                 }
               }
               .second {
                 width: 515px;
                 height: 48px;
+                @media (max-width: 768px) {
+                  width: 100%;
+                  height: auto;
+                }
                 p {
                   font-family: Open Sans;
                   font-weight: 600;
                   font-size: 16px;
                   line-height: 24px;
                   letter-spacing: 0%;
+                  @media (max-width: 768px) {
+                    color: #4d4d4d;
+                    font-size: 15px;
+                  }
                 }
               }
             }
@@ -85,25 +143,35 @@
       flex-direction: column;
       gap: 20px;
       height: 296px;
+      @media (max-width: 768px) {
+      }
       h3 {
         font-family: Roboto Serif;
         font-weight: 700;
         font-size: 32px;
         line-height: 100%;
         letter-spacing: 0%;
+        @media (max-width: 768px) {
+        }
       }
       .ratingStyle {
         display: flex;
         flex-direction: column;
         gap: 16px;
+        @media (max-width: 768px) {
+        }
         .reviewLine {
           display: flex;
           flex-direction: column;
           gap: 19px;
+          @media (max-width: 768px) {
+          }
           .line {
             display: flex;
             align-items: center;
             gap: 8px;
+            @media (max-width: 768px) {
+            }
           }
         }
       }

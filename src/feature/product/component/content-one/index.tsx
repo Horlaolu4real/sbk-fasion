@@ -47,6 +47,7 @@ const ContentOne = () => {
             <DarkIcon />
           </Link>
           <p>Product detail</p>
+          <h3>Hoodie details</h3>
         </div>
         <div className={styles.imageWrapper}>
           <div className={styles.container}>
@@ -63,32 +64,77 @@ const ContentOne = () => {
               <Image
                 src={images[0]}
                 alt="one"
-                width={141}
-                height={128}
+                width={116}
+                height={105}
                 onClick={() => setCurrentIndex(0)}
                 className={styles.rounded_medium}
               />
               <Image
                 src={images[1]}
                 alt="two"
-                width={141}
-                height={128}
+                width={116}
+                height={105}
                 onClick={() => setCurrentIndex(1)}
                 className={styles.rounded_medium}
               />
               <Image
                 src={images[2]}
                 alt="three"
-                width={141}
-                height={128}
+                width={116}
+                height={105}
                 onClick={() => setCurrentIndex(2)}
                 className={styles.rounded_medium}
               />
               <Image
                 src={images[3]}
                 alt="four"
-                width={141}
-                height={128}
+                width={116}
+                height={105}
+                onClick={() => setCurrentIndex(3)}
+                className={styles.rounded_medium}
+              />
+            </div>
+          </div>
+          <div className={styles.mobileContainer}>
+            <div className={styles.mainImg}>
+              <Image
+                src={images[currentIndex]}
+                alt="big"
+                // width={352}
+                // height={284}
+                className={styles.rounded_mediums}
+              />
+            </div>
+            <div className={styles.mobileFlx}>
+              <Image
+                src={images[0]}
+                alt="one"
+                // width={141}
+                // height={128}
+                onClick={() => setCurrentIndex(0)}
+                className={styles.rounded_medium}
+              />
+              <Image
+                src={images[1]}
+                alt="two"
+                // width={141}
+                // height={128}
+                onClick={() => setCurrentIndex(1)}
+                className={styles.rounded_medium}
+              />
+              <Image
+                src={images[2]}
+                alt="three"
+                // width={141}
+                // height={128}
+                onClick={() => setCurrentIndex(2)}
+                className={styles.rounded_medium}
+              />
+              <Image
+                src={images[3]}
+                alt="four"
+                // width={141}
+                // height={128}
                 onClick={() => setCurrentIndex(3)}
                 className={styles.rounded_medium}
               />

@@ -1,6 +1,6 @@
 "use client";
 
-import { CartIcon, LoveIcon, SearchIcon } from "@/assest/icon";
+import { CartIcon, HamburgerIcon, LoveIcon, SearchIcon } from "@/assest/icon";
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -12,10 +12,15 @@ const Navbar = () => {
   return (
     <div className={styles.content}>
       <Image src={navImage} alt="image" className={styles.img} />
+
       <div className={styles.Navbar}>
+        <div className={styles.hamburg}>
+          <HamburgerIcon />
+        </div>
+
         <div className={styles.link}>
           <Link href={"/"}>
-            <Image src={frames} alt="frame" />
+            <Image src={frames} alt="frame" className={styles.headerImg} />
           </Link>
         </div>
 

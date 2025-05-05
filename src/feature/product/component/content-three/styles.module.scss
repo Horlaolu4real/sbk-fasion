@@ -5,12 +5,20 @@
   display: flex;
   flex-direction: column;
   gap: 22px;
+  @media (max-width: 768px) {
+    padding: 0px 16px;
+  }
   p {
     font-family: Open Sans;
     font-weight: 600;
     font-size: 36px;
     line-height: 48px;
     letter-spacing: 4%;
+    @media (max-width: 768px) {
+      font-family: Poppins;
+      font-weight: 600;
+      font-size: 15px;
+    }
   }
   .wrapper {
     // width: 100%;
@@ -19,18 +27,27 @@
     grid-template-rows: repeat(2, 1fr);
     gap: 18px;
     padding-bottom: 2rem;
+    @media (max-width: 768px) {
+    }
     .item {
       height: 100%;
       width: 100%;
       padding-bottom: 2rem;
+      @media (max-width: 768px) {
+        display: none;
+      }
       .imageContent {
         width: 100%;
         height: 320px;
+        @media (max-width: 768px) {
+        }
         img {
           width: 100%;
           height: 100%;
           object-fit: cover;
           border-radius: 8px 8px 0px 0px;
+          @media (max-width: 768px) {
+          }
         }
       }
 
@@ -43,16 +60,22 @@
         display: flex;
         flex-direction: column;
         gap: 8px;
+        @media (max-width: 768px) {
+        }
         .txt {
           display: flex;
           flex-direction: column;
           gap: 4px;
+          @media (max-width: 768px) {
+          }
           p {
             font-family: Open Sans;
             font-weight: 400;
             font-size: 16px;
             line-height: 100%;
             letter-spacing: 0%;
+            @media (max-width: 768px) {
+            }
           }
           h3 {
             font-family: Open Sans;
@@ -61,12 +84,16 @@
             line-height: 100%;
             letter-spacing: 0%;
             color: #1d1d1d;
+            @media (max-width: 768px) {
+            }
           }
         }
         .rating {
           display: flex;
           flex-direction: column;
           gap: 12px;
+          @media (max-width: 768px) {
+          }
           button {
             width: 96px;
             height: 30px;
@@ -78,6 +105,8 @@
             background-color: #db5825;
             outline: none;
             border: 1px solid #db5825;
+            @media (max-width: 768px) {
+            }
             p {
               width: 76px;
               height: 19px;
@@ -87,6 +116,100 @@
               line-height: 100%;
               letter-spacing: 0%;
               color: #fff;
+              @media (max-width: 768px) {
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .mobileProduct {
+      display: none;
+      @media (max-width: 768px) {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        border-radius: 2.18px;
+      }
+      .imgHandle {
+        width: 100%;
+        height: 87px;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      .downDesign {
+        width: 100%;
+        height: auto;
+        padding: 0.25px 0.25px 0px 0.25px;
+        background-color: #f6f4f2;
+        .MobileContent {
+          width: auto;
+          height: 25px;
+          .prod {
+            font-family: Open Sans;
+            font-weight: 400;
+            font-size: 10px;
+            line-height: 100%;
+            letter-spacing: 0%;
+          }
+          .currency {
+            font-family: Open Sans;
+            font-weight: 700;
+            font-size: 8px;
+            line-height: 100%;
+            letter-spacing: 0%;
+            color: #db5825;
+          }
+        }
+        .last {
+          height: auto;
+          width: auto;
+          display: flex;
+          flex-direction: column;
+          gap: 3.26px;
+          .btnSpace {
+            display: flex;
+            gap: 3.26px;
+            align-items: center;
+            .btn {
+              width: 39px;
+              height: 12px;
+              gap: 2.72px;
+              border-radius: 8.16px;
+              padding: 2px;
+              border: 0.27px solid #000000;
+              p {
+                font-family: Open Sans;
+                font-weight: 500;
+                font-size: 6px;
+                line-height: 100%;
+                letter-spacing: 0%;
+              }
+            }
+            .btnRed {
+              width: 37px;
+              height: 12px;
+              gap: 2.72px;
+              border-radius: 8.16px;
+              padding: 2px;
+              border: 0.27px solid #db5825;
+              background-color: #db5825;
+              p {
+                width: 33px;
+                height: 8px;
+                font-family: Open Sans;
+                font-weight: 500;
+                font-size: 6px;
+                line-height: 100%;
+                letter-spacing: 0%;
+                color: #fff;
+              }
             }
           }
         }

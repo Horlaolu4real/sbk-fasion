@@ -8,6 +8,7 @@ import {
   LeftAIcon,
   MinusIcon,
   PlusIcon,
+  RedBinIcon,
 } from "@/assest/icon";
 import Image from "next/image";
 import imgOne from "@/assest/image/detail/Frame 1686561798 (1).svg";
@@ -41,8 +42,46 @@ export const table = [
   },
 ];
 
+export const mobileTable = [
+  {
+    id: 1,
+    product: <Image src={imgOne} alt="one" />,
+    name: "Bvlgari Hedge Slide",
+    size: "Size 45",
+    price: "N390.00",
+    bin: <RedBinIcon />,
+  },
+
+  {
+    id: 2,
+    product: <Image src={imgOne} alt="one" />,
+    name: "Bvlgari Hedge Slide",
+    size: "Size 45",
+    price: "N390.00",
+    bin: <RedBinIcon />,
+  },
+
+  {
+    id: 3,
+    product: <Image src={imgOne} alt="one" />,
+    name: "Bvlgari Hedge Slide",
+    size: "Size 45",
+    price: "N390.00",
+    bin: <RedBinIcon />,
+  },
+];
+
 const TableRow = () => {
   const [index, setIndex] = useState(0);
+  const [mobileIndex, setMobileIndex] = useState(0);
+
+  const increase = () => {
+    setMobileIndex((prev) => prev + 1);
+  };
+
+  const decrease = () => {
+    setMobileIndex((prev) => prev - 1);
+  };
 
   const increment = () => {
     setIndex((prev) => prev + 1);
@@ -60,7 +99,7 @@ const TableRow = () => {
             <CheckBackIcon />
           </Link>
 
-          <p>Check Back</p>
+          <p>CheckBack</p>
         </div>
         <div className={styles.tableGrid}>
           <div className={`${styles.row} ${styles.header}`}>
@@ -129,6 +168,54 @@ const TableRow = () => {
 
             <button className={styles.btn}>
               <Link href={"./billing"}>
+                <p>Proceed to checkout</p>
+              </Link>
+            </button>
+          </div>
+        </div>
+        <div className={styles.mobileProd}>
+          {mobileTable.map((txt, index) => (
+            <div key={index} className={styles.cover}>
+              <div className={styles.imgContent}>
+                <div className={styles.imgwidth}>{txt.product}</div>
+                <div className={styles.para}>
+                  <div className={styles.txt}>
+                    <h1 className={styles.name}>{txt.name}</h1>
+                    <p className={styles.price}>{txt.price}</p>
+                  </div>
+                </div>
+                <div className={styles.bin}>{txt.bin}</div>
+              </div>
+              <div className={styles.btnAmount}>
+                <div className={styles.size}>
+                  <p>{txt.size}</p>
+                  <DarkDropIcon />
+                </div>
+                <div className={styles.sizeChange}>
+                  <p onClick={decrease}>{/* <MinusIcon /> */}-</p>
+                  {mobileIndex}
+                  <p onClick={increase}>{/* <PlusIcon /> */}+</p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+        <div className={styles.calculationBtn}>
+          <div className={styles.amt}>
+            <h3>Sub total</h3>
+            <p>N203,000</p>
+          </div>
+          <div className={styles.amt}>
+            <h3>Shipping fee</h3>
+            <p>Free</p>
+          </div>
+          <div className={styles.amt}>
+            <h3>Total</h3>
+            <p>N203,000</p>
+          </div>
+          <div className={styles.btn}>
+            <button className={styles.btnSubmit}>
+              <Link href={'./billing'}>
                 <p>Proceed to checkout</p>
               </Link>
             </button>

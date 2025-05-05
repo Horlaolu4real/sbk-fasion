@@ -1,6 +1,12 @@
 "use client";
 
-import { CartIcon, LoveIcon, SearchIcon } from "@/assest/icon";
+import {
+  CartIcon,
+  DarkSearchIcon,
+  HamburgerIcon,
+  LoveIcon,
+  SearchIcon,
+} from "@/assest/icon";
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -11,11 +17,13 @@ import styles from "./styles.module.scss";
 const Navbar = () => {
   return (
     <div className={styles.content}>
-    
       <div className={styles.Navbar}>
+        <div className={styles.hamburg}>
+          <HamburgerIcon />
+        </div>
         <div className={styles.link}>
           <Link href={"/"}>
-            <Image src={frames} alt="frame" />
+            <Image src={frames} alt="frame" className={styles.frame} />
           </Link>
         </div>
 
@@ -56,6 +64,7 @@ const Navbar = () => {
             </div>
           </div>
           <div className={styles.icon}>
+            <DarkSearchIcon className={styles.icons} />
             <LoveIcon />
             <CartIcon />
           </div>

@@ -5,8 +5,10 @@ import imgOne from "@/assest/image/img/Frame 1686562430 (20).svg";
 import imgTwo from "@/assest/image/img/Frame 1686562430 (21).svg";
 import imgThree from "@/assest/image/img/Frame 1686562430 (22).svg";
 import imgFour from "@/assest/image/img/Frame 1686562430 (23).svg";
+import { catolouges } from "@/feature/prod/component/file";
+// import { prod } from "@/feature/homepage/folder";
 import Link from "next/link";
-import { BlurStar, GoldStar } from "@/assest/icon";
+import { BlurStar, GoldStar, SmallStarsIcon } from "@/assest/icon";
 
 export const file = [
   {
@@ -84,6 +86,31 @@ const ContentThree = () => {
                     <p>Add to Cart</p>
                   </Link>
                 </button>
+              </div>
+            </div>
+          </div>
+        ))}
+        {catolouges.map((prod, index) => (
+          <div key={index} className={styles.mobileProduct}>
+            <div className={styles.imgHandle}>{prod.img}</div>
+            <div className={styles.downDesign}>
+              <div className={styles.MobileContent}>
+                <p className={styles.prod}>Bvlgari Hedge S..</p>
+                <h3 className={styles.currency}> {prod.amount}</h3>
+              </div>
+              <div className={styles.last}>
+                <SmallStarsIcon />
+                <div className={styles.btnSpace}>
+                  <button className={styles.btn}>
+                    <Link href={"./calculate"}>
+                      <p>View more</p>
+                    </Link>
+                  </button>
+
+                  <button className={styles.btnRed}>
+                    <p>Add to Cart</p>
+                  </button>
+                </div>
               </div>
             </div>
           </div>

@@ -146,6 +146,49 @@ export const catolouge = [
   },
 ];
 
+export const catolouges = [
+  {
+    img: <Image src={fir} alt="first" />,
+    txt: "Bvlgari Hedge Slide",
+    amount: "N48,750",
+  },
+  {
+    img: <Image src={sec} alt="first" />,
+    txt: "Bvlgari Hedge Slide",
+    amount: "N48,750",
+  },
+  {
+    img: <Image src={thir} alt="first" />,
+    txt: "Bvlgari Hedge Slide",
+    amount: "N48,750",
+  },
+  {
+    img: <Image src={fo} alt="first" />,
+    txt: "Bvlgari Hedge Slide",
+    amount: "N48,750",
+  },
+  {
+    img: <Image src={fif} alt="first" />,
+    txt: "Bvlgari Hedge Slide",
+    amount: "N48,750",
+  },
+  {
+    img: <Image src={six} alt="first" />,
+    txt: "Bvlgari Hedge Slide",
+    amount: "N48,750",
+  },
+  {
+    img: <Image src={seve} alt="first" />,
+    txt: "Bvlgari Hedge Slide",
+    amount: "N48,750",
+  },
+  {
+    img: <Image src={eigh} alt="first" />,
+    txt: "Bvlgari Hedge Slide",
+    amount: "N48,750",
+  },
+];
+
 export const details = [
   {
     img: <Image src={First} alt="first" />,

@@ -34,6 +34,12 @@ const Footer = () => {
               <Link href={"/"}>
                 <Image src={font} alt="fnt" />
               </Link>
+              <div className={styles.icons}>
+                <TwitterIcon />
+                <InstagramIcon />
+                <FacebookIcon />
+                <LinkdenIcon />
+              </div>
 
               <div className={styles.input}>
                 <input type="text" placeholder="Enter your email" />
@@ -53,6 +59,10 @@ const Footer = () => {
             <span> © Copyright SBK Fashion 2025, All Rights Reserved.</span> |
             FAQ | Terms & Condition | Privacy Policy
           </p>
+          <h6>
+            <span>© Copyright SBK Fashion 2025, All Rights Reserved. </span>|
+            FAQ | Terms & Condition | Privacy Policy
+          </h6>
         </div>
       </footer>
     </>

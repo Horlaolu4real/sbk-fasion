@@ -29,11 +29,11 @@ const Header = () => {
           <div className={styles.firstFilter}>
             <div className={styles.contentOne}>
               <Link href={"./"} className={styles.link}>
-                <CheckBackIcon />
+                <CheckBackIcon className={styles.check_icon} />
               </Link>
               <div className={styles.all}>
                 <p>All</p>
-                <DropDownIcon />
+                <DropDownIcon className={styles.drop_down} />
               </div>
             </div>
             <ul className={styles.listTwo}>

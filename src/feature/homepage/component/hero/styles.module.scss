@@ -5,6 +5,7 @@
   width: 100%;
   // height: 293px;
   align-items: center;
+  margin-bottom: 10px;
   //   justify-content: center;
   .fullWidth {
     // width: 862px;
@@ -12,9 +13,20 @@
     flex-direction: column;
     align-items: center;
     height: 293px;
+    @media (max-width: 768px) {
+      margin-top: 40px;
+      display: block;
+      padding: 10px 16px;
+    }
     .text {
       width: 859px;
       height: 140px;
+      @media (max-width: 768px) {
+        width: 100%;
+        max-width: 340px;
+        height: 126px;
+        padding-bottom: 50px;
+      }
 
       .header {
         font-family: Roboto Serif;
@@ -24,6 +36,13 @@
         letter-spacing: 0%;
         text-align: center;
         vertical-align: middle;
+        @media (max-width: 768px) {
+          font-family: Roboto Serif;
+          font-weight: 900;
+          font-size: 36px;
+          line-height: 100%;
+          letter-spacing: 0%;
+        }
       }
     }
     .para {
@@ -33,6 +52,12 @@
       flex-direction: column;
       align-items: center;
       //   justify-content: center;
+      @media (max-width: 768px) {
+        margin-top: 30px;
+        max-width: 358px;
+        height: 105px;
+        gap: 24px;
+      }
 
       p {
         height: 54px;
@@ -43,6 +68,14 @@
         letter-spacing: 0%;
         text-align: center;
         vertical-align: middle;
+        @media (max-width: 768px) {
+          width: 100%;
+          max-width: 340px;
+          height: 38px;
+          font-size: 14px;
+          line-height: 100%;
+          letter-spacing: 0%;
+        }
       }
       .btnField {
         .btn {

@@ -5,10 +5,17 @@
     display: flex;
     flex-direction: column;
     padding: 45px 60px 60px 60px;
+    @media (max-width: 768px) {
+      padding: 20px 16px;
+    }
     .product_design {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 18px;
+      @media (max-width: 768px) {
+        justify-content: space-between;
+      }
+
       .product {
         width: 100%;
         height: 100%;
@@ -16,6 +23,9 @@
         display: flex;
         flex-direction: column;
         border-radius: 8px;
+        @media (max-width: 768px) {
+          display: none;
+        }
         .imgHandle {
           width: 100%;
           height: 320px;
@@ -81,7 +91,97 @@
           }
         }
       }
+      .mobileProduct {
+        display: none;
+        @media (max-width: 768px) {
+          width: 100%;
+          height: 100%;
+          overflow: hidden;
+          display: flex;
+          flex-direction: column;
+          border-radius: 2.18px;
+        }
+        .imgHandle {
+          width: 100%;
+          height: 87px;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+        .downDesign {
+          width: 100%;
+          height: auto;
+          padding: 0.25px 0.25px 0px 0.25px;
+          background-color: #f6f4f2;
+          .MobileContent {
+            width: auto;
+            height: 25px;
+            .prod {
+              font-family: Open Sans;
+              font-weight: 400;
+              font-size: 10px;
+              line-height: 100%;
+              letter-spacing: 0%;
+            }
+            .currency {
+              font-family: Open Sans;
+              font-weight: 700;
+              font-size: 8px;
+              line-height: 100%;
+              letter-spacing: 0%;
+              color: #db5825;
+            }
+          }
+          .last {
+            height: auto;
+            width: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 3.26px;
+            .btnSpace {
+              display: flex;
+              gap: 3.26px;
+              align-items: center;
+              .btn {
+                width: 39px;
+                height: 12px;
+                gap: 2.72px;
+                border-radius: 8.16px;
+                padding: 2px;
+                border: 0.27px solid #000000;
+                p {
+                  font-family: Open Sans;
+                  font-weight: 500;
+                  font-size: 6px;
+                  line-height: 100%;
+                  letter-spacing: 0%;
+                }
+              }
+              .btnRed {
+                width: 37px;
+                height: 12px;
+                gap: 2.72px;
+                border-radius: 8.16px;
+                padding: 2px;
+                border: 0.27px solid #db5825;
+                background-color: #db5825;
+                p {
+                  width: 33px;
+                  height: 8px;
+                  font-family: Open Sans;
+                  font-weight: 500;
+                  font-size: 6px;
+                  line-height: 100%;
+                  letter-spacing: 0%;
+                  color: #fff;
+                }
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
-

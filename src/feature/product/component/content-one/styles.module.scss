@@ -4,6 +4,10 @@
   padding-bottom: 100px;
   width: 100%;
   height: 100%;
+  @media (max-width: 768px) {
+    padding: 0px 16px;
+    margin-bottom: 1rem;
+  }
 
   .linkPage {
     display: flex;
@@ -11,6 +15,9 @@
     gap: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
+    @media (max-width: 768px) {
+      // flex-direction: column;
+    }
     p {
       font-family: Roboto Serif;
       font-weight: 400;
@@ -18,52 +25,139 @@
       line-height: 24px;
       letter-spacing: 0%;
       text-align: center;
+      @media (max-width: 768px) {
+        display: none;
+      }
+    }
+
+    h3 {
+      display: none;
+      @media (max-width: 768px) {
+        display: flex;
+        font-family: Roboto Serif;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 0%;
+        text-align: center;
+      }
     }
   }
   .imageWrapper {
     width: 100%;
     display: flex;
     gap: 94px;
+    @media (max-width: 768px) {
+      flex-direction: column;
+      gap: 90px;
+    }
     .container {
       display: flex;
       flex-direction: column;
       gap: 10px;
       height: 562px;
+      width: 100%;
+      @media (max-width: 768px) {
+        display: none;
+      }
       .mainImg {
         .rounded_medium {
           //   padding-right: 108px;
           //   padding-left: 108px;
           border-radius: 18px;
+          @media (max-width: 768px) {
+          }
         }
       }
       .imagFlx {
         width: 600px;
         display: flex;
-
         justify-content: space-between;
         height: 128px;
+        @media (max-width: 768px) {
+        }
         .rounded_medium {
           border-radius: 18px;
+          @media (max-width: 768px) {
+          }
         }
       }
     }
+    .mobileContainer {
+      display: none;
+      @media (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        width: 100%;
+        height: auto;
+      }
+      .mainImg {
+        width: 100%;
+        height: 100%;
+
+        .rounded_mediums {
+          border-radius: 10px;
+          object-fit: cover;
+          width: 100% !important;
+          height: auto;
+          // max-width: 358px;
+          max-height: 284px;
+        }
+      }
+      .mobileFlx {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        // justify-content: space-between;
+        gap: 15px;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+        margin-bottom: 20px;
+        padding-left: 20px;
+        .rounded_medium {
+          border-radius: 15px;
+          object-fit: cover;
+          width: 116px !important;
+          height: auto;
+          // max-width: 116px;
+          max-height: 105px;
+        }
+      }
+    }
+
     .containerTwo {
       display: flex;
       flex-direction: column;
       gap: 44px;
-      width: fit-content;
+      width: 100%;
       height: 562px;
+      @media (max-width: 768px) {
+        gap: 30px;
+        height: 100%;
+        width: 100%;
+      }
       .layerOne {
         display: flex;
         flex-direction: column;
         gap: 16px;
         height: 190px;
+        @media (max-width: 768px) {
+          gap: 9.16px;
+          height: 113px !important;
+        }
         h3 {
           font-family: Roboto Serif;
           font-weight: 700;
           font-size: 24px;
           line-height: 100%;
           letter-spacing: 0%;
+          @media (max-width: 768px) {
+            font-family: Open Sans;
+            font-size: 16px;
+          }
         }
         .text {
           font-family: Open Sans;
@@ -72,6 +166,13 @@
           line-height: 24px;
           letter-spacing: 0%;
           color: #7a7a7a;
+          @media (max-width: 768px) {
+            font-size: 10px;
+            line-height: 13.69px;
+            letter-spacing: 0%;
+            width: 284px;
+            height: 28px;
+          }
         }
         .reviews {
           font-family: Open Sans;
@@ -80,6 +181,12 @@
           line-height: 24px;
           letter-spacing: 0%;
           color: #adadad;
+          @media (max-width: 768px) {
+            font-family: Open Sans;
+            font-weight: 400;
+            line-height: 13.69px;
+            font-size: 8px;
+          }
         }
         .price {
           font-family: Open Sans;
@@ -87,6 +194,10 @@
           font-size: 32px;
           line-height: 100%;
           letter-spacing: 0%;
+          @media (max-width: 768px) {
+            font-weight: 700;
+            font-size: 16px;
+          }
         }
       }
       .layerTwo {
@@ -95,18 +206,34 @@
         gap: 16px;
         width: 338px;
         height: 104px;
+        @media (max-width: 768px) {
+          gap: 8px;
+          width: 100%;
+          max-width: 342px;
+          height: auto;
+        }
         p {
           font-family: Open Sans;
           font-weight: 600;
           font-size: 16px;
           line-height: 24px;
           letter-spacing: 0%;
+          @media (max-width: 768px) {
+            font-size: 9.12px;
+            line-height: 13.69px;
+          }
         }
         .btnSurplus {
           display: flex;
           width: 338px;
           height: 64px;
           gap: 2px;
+          @media (max-width: 768px) {
+            // justify-content: space-between;
+            width: 282px;
+            height: auto;
+            gap: 15px;
+          }
           .indexBtn {
             display: flex;
             gap: 34px;
@@ -115,6 +242,12 @@
             width: 198px;
             align-items: center;
             border-radius: 22px;
+            @media (max-width: 768px) {
+              width: 169px;
+              padding: 11.41px 25.09px;
+              gap: 19.39px;
+              border-radius: 12.55px;
+            }
           }
           h6 {
             height: 48px;
@@ -125,8 +258,12 @@
             letter-spacing: 0%;
             text-align: center;
             color: #9b9a9a;
+            @media (max-width: 768px) {
+            }
             span {
               color: #000000;
+              @media (max-width: 768px) {
+              }
             }
           }
         }
@@ -134,9 +271,16 @@
       .layerThree {
         display: flex;
         flex-direction: column;
-        width: 505px;
+        width: 100%;
         height: 144px;
         gap: 16px;
+        @media (max-width: 768px) {
+          height: 85px;
+          width: 100%;
+          gap: 0px;
+          justify-content: space-between;
+          // max-width: 342px;
+        }
         p {
           font-family: Open Sans;
           font-weight: 600;
@@ -144,21 +288,45 @@
           line-height: 24px;
           letter-spacing: 0%;
           height: 24px;
+          @media (max-width: 768px) {
+            font-family: Poppins;
+            font-weight: 600;
+            font-size: 9.12px;
+            line-height: 13.69px;
+            height: auto;
+          }
         }
         .arra {
           display: grid;
           gap: 8px;
           grid-template-columns: repeat(9, 1fr);
           grid-template-rows: repeat(2, 1fr);
+          @media (max-width: 768px) {
+            width: 100%;
+
+            // justify-content: space-between;
+            gap: 3px;
+          }
           .but {
+            @media (max-width: 768px) {
+              width: fit-content;
+            }
             .btns {
               width: 49px;
               height: 44px;
               border: 1px solid #cfcfcf;
               padding: 10px;
+              @media (max-width: 768px) {
+                width: 27px;
+                height: 25px;
+                border: 0.57px #cfcfcf;
+                padding: 5.7px;
+              }
               &:hover {
                 background-color: #000000;
                 color: #fff;
+                @media (max-width: 768px) {
+                }
               }
             }
           }
@@ -166,6 +334,13 @@
       }
       .layerFour {
         padding-top: 35px;
+        @media (max-width: 768px) {
+          width: 100%;
+          padding-top: 1em;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
         button {
           width: 497px;
           height: 56px;
@@ -177,6 +352,12 @@
           outline: none;
           border: 1px solid #db5825;
           border-radius: 4px;
+          @media (max-width: 768px) {
+            width: 283px;
+            height: 32px;
+            padding: 9px 27px;
+            border-radius: 2.38px;
+          }
           p {
             font-family: Open Sans;
             font-weight: 500;
@@ -184,6 +365,12 @@
             line-height: 24px;
             letter-spacing: 0%;
             color: #fff;
+            @media (max-width: 768px) {
+              font-weight: 500;
+              font-size: 13px;
+              line-height: 13.69px;
+              color: #fafafa;
+            }
           }
         }
       }

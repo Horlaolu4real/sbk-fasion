@@ -13,6 +13,19 @@ import slideOne from "@/assest/image/slide/Frame 1686562450 (2).svg";
 import slideTwo from "@/assest/image/slide/Frame 1686562451 (1).svg";
 import slideThree from "@/assest/image/slide/Frame 1686562452 (1).svg";
 
+import img from "@/assest/image/mobile/Frame 1686562452 (2).svg";
+import imgThree from "@/assest/image/mobile/Frame 1686562451 (2).svg";
+import imgTwo from "@/assest/image/mobile/Frame 1686562450 (3).svg";
+
+import One from "@/assest/image/mobile/one.jpg"
+import Two from "@/assest/image/mobile/two.jpg"
+import Three from "@/assest/image/mobile/three.jpg"
+import Four from "@/assest/image/mobile/four.jpg"
+import Five from "@/assest/image/mobile/five.jpg"
+import Six from "@/assest/image/mobile/six.jpg"
+import Seven from "@/assest/image/mobile/seven.jpg"
+import Eight from "@/assest/image/mobile/eight.jpg"
+
 export const product = [
   {
     img: <Image src={productTwo} alt="one" />,
@@ -56,6 +69,51 @@ export const product = [
   },
 ];
 
+export const prod = [
+  {
+    img: <Image src={One} alt="one" />,
+    txt: "Bvlgari Hedge S..",
+    amount: "N48,750",
+  },
+  {
+    img: <Image src={Two} alt="two" />,
+    txt: "Bvlgari Hedge S..",
+    amount: "N48,750",
+  },
+  {
+    img: <Image src={Three} alt="three" />,
+    txt: "Bvlgari Hedge S..",
+    amount: "N48,750",
+  },
+  {
+    img: <Image src={Four} alt="four" />,
+    txt: "Bvlgari Hedge S..",
+    amount: "N48,750",
+  },
+  {
+    img: <Image src={Five} alt="five" />,
+    txt: "Bvlgari Hedge S..",
+    amount: "N48,750",
+  },
+  {
+    img: <Image src={Six} alt="six" />,
+    txt: "Bvlgari Hedge S..",
+    amount: "N48,750",
+  },
+  {
+    img: <Image src={Seven} alt="seven" />,
+    txt: "Bvlgari Hedge S..",
+    amount: "N48,750",
+  },
+  {
+    img: <Image src={Eight} alt="eight" />,
+    txt: "Bvlgari Hedge S..",
+    amount: "N48,750",
+  },
+];
+
+
+
 export const slides = [
   {
     img: <Image src={slideOne} alt="one" />,
@@ -71,6 +129,25 @@ export const slides = [
 
   {
     img: <Image src={slideThree} alt="three" />,
+    txt: "Carry confidence, Our bag blends function, fashion, and finesse.",
+    btn: "Shop Bags",
+  },
+];
+export const slide = [
+  {
+    img: <Image src={img} alt="one" />,
+    txt: "Slide into comfort and style, the perfect choice laid back luxury on any day",
+    btn: "Shop slides",
+  },
+
+  {
+    img: <Image src={imgTwo} alt="one" />,
+    txt: "Make your presence unforgettable, Discover scents that tell your story",
+    btn: "Shop perfumes",
+  },
+
+  {
+    img: <Image src={imgThree} alt="one" />,
     txt: "Carry confidence, Our bag blends function, fashion, and finesse.",
     btn: "Shop Bags",
   },
