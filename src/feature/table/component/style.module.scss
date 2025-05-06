@@ -365,9 +365,13 @@
       align-items: center;
     }
     .btn {
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      display: none;
+      @media (max-width: 768px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
       .btnSubmit {
         padding: 16px 48px;
         width: 100%;
