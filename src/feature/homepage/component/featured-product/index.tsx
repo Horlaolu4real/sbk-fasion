@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useEffect, useState } from "react";
 import imgOne from "@/assest/image/Rectangle 22.svg";
 import imgTwo from "@/assest/image/Rectangle 23.svg";
 import imgThree from "@/assest/image/Rectangle 28.svg";
@@ -31,9 +32,15 @@ export const featuredProducts = [
 ];
 
 const FeaturedProduct = () => {
+  const [isVisible, setIsVisible] = useState<boolean>(false);
+
+  useEffect(() => {
+    const timeout = setTimeout(() => setIsVisible(true), 200);
+    return () => clearTimeout(timeout);
+  }, []);
   return (
     <>
-      <div className={styles.content}>
+      <div className={`${styles.content} ${isVisible ? styles.slideIn : ""}`}>
         <Image src={rotateImg} alt="rt" className={styles.rotate} />
         <div className={styles.flx}>
           {featuredProducts.map((prod, index) => (

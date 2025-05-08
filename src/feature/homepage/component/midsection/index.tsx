@@ -84,10 +84,9 @@ const Midsection = () => {
                       </button>
 
                       <button className={styles.btnAdd}>
-                        <Link href={'./calculate'}>
-                        <p>Add to cart</p>
+                        <Link href={"./calculate"}>
+                          <p>Add to cart</p>
                         </Link>
-                      
                       </button>
                     </div>
                   </div>

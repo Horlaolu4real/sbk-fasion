@@ -37,8 +37,14 @@ const ContentOne = () => {
     psCard: "",
   });
 
-  const [isClicked, setIsClicked] = useState(false);
-  // const [isClick, setIsClick] = useState(false);
+  const [selected, setSelected] = useState(false);
+
+  const toggle = () => setSelected((prev) => !prev);
+
+  const [selecteds, setSelecteds] = useState(false);
+
+  const toggles = () => setSelecteds((prev) => !prev);
+
   const completed = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
 
@@ -288,16 +294,9 @@ const ContentOne = () => {
               <div className={styles.bankRow}>
                 <div className={styles.bankCard}>
                   <div
-                    onClick={() => setIsClicked(true)}
-                    style={{
-                      width: "20px",
-                      height: "20px",
-                      borderRadius: "50%",
-                      border: "1px solid #000",
-                      backgroundColor: isClicked ? "black" : "#fff",
-                      cursor: "pointer",
-                    }}
-                  ></div>
+                    className={`${styles.dot} ${selected ? styles.active : ""}`}
+                    onClick={toggle}
+                  />
                   <p className={styles.bank}>Bank</p>
                 </div>
                 <div className={styles.brandImg}>
@@ -310,16 +309,12 @@ const ContentOne = () => {
               <div className={styles.cashRow}>
                 <div className={styles.dotPages}>
                   <div
-                    onClick={() => setIsClicked(true)}
-                    style={{
-                      width: "20px",
-                      height: "20px",
-                      borderRadius: "50%",
-                      border: "1px solid #000",
-                      backgroundColor: isClicked ? "black" : "#fff",
-                      cursor: "pointer",
-                    }}
-                  ></div>
+                    className={`${styles.dot} ${
+                      selecteds ? styles.active : ""
+                    }`}
+                    onClick={toggles}
+                  />
+
                   <p className={styles.delivery}>Cash On dilivery</p>
                 </div>
               </div>

@@ -430,6 +430,20 @@
             gap: 16px;
             @media (max-width: 768px) {
             }
+            .dot {
+              width: 20px;
+              height: 20px;
+              border-radius: 50%;
+              border: 1px solid #000;
+              background-color: #fff;
+              cursor: pointer;
+              transition: background-color 0.2s ease;
+            }
+
+            .active {
+              background-color: black;
+            }
+
             .bank {
               font-family: Poppins;
               font-weight: 400;
@@ -453,6 +467,19 @@
             gap: 16px;
             align-items: center;
             @media (max-width: 768px) {
+            }
+            .dot {
+              width: 20px;
+              height: 20px;
+              border-radius: 50%;
+              border: 1px solid #000;
+              background-color: #fff;
+              cursor: pointer;
+              transition: background-color 0.2s ease;
+            }
+
+            .active {
+              background-color: black;
             }
             .delivery {
               font-family: Poppins;

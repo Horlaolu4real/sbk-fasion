@@ -7,11 +7,19 @@
   width: 100%;
   position: relative;
   padding-bottom: 6rem;
+  transform: translateX(100%);
+  opacity: 0;
+  transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out;
+
+  &.slideIn {
+    transform: translateX(0%);
+    opacity: 1;
+  }
   @media (max-width: 768px) {
     padding-bottom: 2rem;
     height: 146px;
   }
-  // background-color: #FAFAFA;
+
 
   .rotate {
     position: absolute;

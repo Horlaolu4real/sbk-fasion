@@ -72,6 +72,9 @@
         outline: none;
         background-color: #db5825;
         border: 1px solid #db5825;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         @media (max-width: 768px) {
           width: 172px;
           height: 33px;
@@ -84,7 +87,11 @@
           font-size: 16px;
           line-height: 100%;
           letter-spacing: 0%;
-          vertical-align: middle;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: align;
+          // vertical-align: middle;
           @media (max-width: 768px) {
           }
           font-size: 16px;
@@ -154,13 +161,14 @@
             height: 58px;
             border-radius: 10px;
             border: 1px solid #d2d2d2;
-            padding: 6px 12px 6px 18px;
+            padding: 6px 12px 6px 40px;
             background-color: #33160a;
             font-family: Open Sans;
             font-weight: 400;
             font-size: 14px;
             line-height: 28px;
             letter-spacing: 0%;
+            // text-align: center;
             @media (max-width: 768px) {
             }
           }
@@ -260,7 +268,7 @@
         text-decoration-style: solid;
         text-decoration-thickness: 0%;
         text-decoration-skip-ink: auto;
-        color: #B1B1B1;
+        color: #b1b1b1;
       }
     }
   }
