@@ -49,6 +49,13 @@ const Footer = () => {
                   <p>Subscribe</p>
                 </button>
               </div>
+              <div className={styles.mobileInput}>
+                <input type="text" placeholder="Enter your email" />
+                <br />
+                <button className={styles.mobileBtn}>
+                  <h3>Subscribe</h3>
+                </button>
+              </div>
             </div>
             <div className={styles.icon}>
               <TwitterIcon />
