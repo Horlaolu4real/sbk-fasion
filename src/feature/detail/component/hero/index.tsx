@@ -28,7 +28,9 @@ const Hero = () => {
           </div>
         </div>
         <div className={styles.icon}>
-          <CheckBackIcon />
+          <Link href={"./shopping"}>
+            <CheckBackIcon />
+          </Link>
         </div>
         <div className={styles.contentOne}>
           <Link href={"./"} className={styles.link}>
@@ -38,11 +40,6 @@ const Hero = () => {
             <p>All</p>
             <DropDownIcon className={styles.drop_down} />
           </div>
-          {/* <div className={styles.secondFilter}>
-            <FilterIcon />
-            <p>Filter</p>
-            <WhiteDropdownIcon />
-          </div> */}
         </div>
 
         <div className={styles.delete_product_catalogue}>
@@ -105,4 +102,3 @@ const Hero = () => {
 };
 
 export default Hero;
-

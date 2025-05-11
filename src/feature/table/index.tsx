@@ -1,15 +1,14 @@
 import React from "react";
 import TableRow from "./component";
-import Footer from "../homepage/component/footer";
 import Navbar from "../prod/component/navbar";
+import styles from "./styles.module.scss"
 
 const File = () => {
   return (
-    <>
+    <div className={styles.container}>
       <Navbar />
       <TableRow />
-      <Footer />
-    </>
+    </div>
   );
 };
 

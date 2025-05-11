@@ -16,6 +16,7 @@
       height: 100%;
       object-fit: cover;
       display: block;
+      opacity: 0.5;
       @media (max-width: 768px) {
         position: absolute;
         z-index: 0;
@@ -113,6 +114,7 @@
       gap: 18px;
       @media (max-width: 768px) {
         justify-content: space-between;
+        gap: 6px;
       }
       .product {
         width: 100%;
@@ -219,7 +221,7 @@
         }
         .imgHandle {
           width: 100%;
-          height: 87px;
+          height: 95px;
           img {
             width: 100%;
             height: 100%;
@@ -227,9 +229,9 @@
           }
         }
         .downDesign {
-          width: 100%;
+          width: 95px;
           height: auto;
-          padding: 0.25px 0.25px 0px 0.25px;
+          padding: 0.4em 0.1em 0.4em 0.1em;
           background-color: #f6f4f2;
           .MobileContent {
             width: auto;
@@ -276,7 +278,7 @@
                 }
               }
               .btnRed {
-                width: 37px;
+                // width: 37px;
                 height: 12px;
                 gap: 2.72px;
                 border-radius: 8.16px;
@@ -284,13 +286,12 @@
                 border: 0.27px solid #db5825;
                 background-color: #db5825;
                 p {
-                  width: 33px;
-                  height: 8px;
+                  width: fit-content;
                   font-family: Open Sans;
                   font-weight: 500;
                   font-size: 6px;
-                  line-height: 100%;
-                  letter-spacing: 0%;
+                  // line-height: 100%;
+                  // letter-spacing: 0%;
                   color: #fff;
                 }
               }

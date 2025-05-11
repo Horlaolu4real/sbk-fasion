@@ -1,12 +1,12 @@
 import React from "react";
 import ContentOne from "./component/content-one";
-import Footer from "../homepage/component/footer";
+import Navbar from "../prod/component/navbar";
 
 const File = () => {
   return (
     <>
+      <Navbar />
       <ContentOne />
-      <Footer />
     </>
   );
 };

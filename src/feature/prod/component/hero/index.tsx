@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./styles.module.scss";
 import { catolouge } from "../file";
 import { BlurStar, GoldStar, SmallStarsIcon } from "@/assest/icon";
+import Link from "next/link";
 
 const HeroPage = () => {
   return (
@@ -26,7 +27,9 @@ const HeroPage = () => {
                       <BlurStar />
                     </div>
                     <button className={styles.btn}>
-                      <p>Add to Cart</p>
+                      <Link href={"./detail"}>
+                        <p>Add to Cart</p>
+                      </Link>
                     </button>
                   </div>
                 </div>

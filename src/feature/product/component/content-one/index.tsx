@@ -32,12 +32,21 @@ const ContentOne = () => {
   const images = [imgOne, imgTwo, imgThree, imgFour];
 
   const [currentIndex, setCurrentIndex] = useState(0);
-  const decrement = () => {
-    setCurrentIndex((prev) => prev - 1);
+  // const decrement = () => {
+  //   setCurrentIndex((prev) => prev - 1);
+  // };
+
+  // const increment = () => {
+  //   setCurrentIndex((prev) => prev + 1);
+  // };
+
+  const [currentIndes, setCurrentIndes] = useState(0);
+  const decrements = () => {
+    setCurrentIndes((prev) => prev - 1);
   };
 
-  const increment = () => {
-    setCurrentIndex((prev) => prev + 1);
+  const increments = () => {
+    setCurrentIndes((prev) => prev + 1);
   };
   return (
     <>
@@ -156,11 +165,11 @@ const ContentOne = () => {
               <p>Quantity</p>
               <div className={styles.btnSurplus}>
                 <div className={styles.indexBtn}>
-                  <p onClick={decrement}>
+                  <p onClick={decrements}>
                     <MinusIcon />
                   </p>
-                  <p>{currentIndex}</p>
-                  <p onClick={increment}>
+                  <p>{currentIndes}</p>
+                  <p onClick={increments}>
                     <PlusIcon />
                   </p>
                 </div>

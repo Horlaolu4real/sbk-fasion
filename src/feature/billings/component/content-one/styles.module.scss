@@ -231,6 +231,7 @@
             border-radius: 4px;
             border: 1px solid #e1e1e1;
             background-color: #f5f5f5;
+            outline: none;
             @media (max-width: 768px) {
               width: 100%;
             }
@@ -516,12 +517,6 @@
             @media (max-width: 768px) {
             }
             p {
-              // width: 112px;
-              // height: 24px;
-              // // top: 16px;
-              // // left: 20px;
-              // opacity: 0.5;
-
               font-family: Poppins;
               font-weight: 400;
               font-size: 16px;
@@ -529,6 +524,9 @@
               letter-spacing: 0%;
               color: #db5825;
               @media (max-width: 768px) {
+                font-size: 12px;
+                width: 100%;
+                opacity: 0.5;
               }
               // top: 16px;
               // left: 24px;
@@ -547,15 +545,16 @@
             @media (max-width: 768px) {
             }
             p {
-              width: 115px;
-              height: 24px;
+              // width: 115px;
+              // height: 24px;
               font-family: Poppins;
               font-weight: 500;
-              font-size: 16px;
+              font-size: 14px;
               line-height: 24px;
               letter-spacing: 0%;
               color: #fafafa;
               @media (max-width: 768px) {
+                font-size: 12px;
               }
             }
           }

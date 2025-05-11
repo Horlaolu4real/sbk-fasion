@@ -9,22 +9,22 @@ import { BlurStar, GoldStar, RedIcon } from "@/assest/icon";
 export const review = [
   {
     img: <Image src={frameOne} alt="alt" />,
-    name: "Olu jacobs",
+    name: "John doe",
     txt: "Add a description of the product down here Add a description of the product down here",
   },
   {
     img: <Image src={frameTwo} alt="alt" />,
-    name: "Olu jacobs",
+    name: "Mary Isaac",
     txt: "Add a description of the product down here Add a description of the product down here",
   },
   {
     img: <Image src={frameOne} alt="alt" />,
-    name: "Olu jacobs",
+    name: "John doe",
     txt: "Add a description of the product down here Add a description of the product down here",
   },
   {
     img: <Image src={frameTwo} alt="alt" />,
-    name: "Olu jacobs",
+    name: "Mary Isaac",
     txt: "Add a description of the product down here Add a description of the product down here",
   },
 ];

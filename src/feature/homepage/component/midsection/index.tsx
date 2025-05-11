@@ -1,11 +1,10 @@
 import React from "react";
 import styles from "./styles.module.scss";
-import { product } from "@/feature/homepage/folder/index";
-import { slides } from "@/feature/homepage/folder";
-import { slide } from "@/feature/homepage/folder";
+// import { product } from "@/feature/homepage/folder/index";
 import { prod } from "@/feature/homepage/folder";
 // import imgOne from "@/assest/image/Frame 1686562443.svg";
 import imgOne from "@/assest/image/detail/cover.jpg";
+import { catolouges } from "@/feature/prod/component/file";
 import Link from "next/link";
 
 import Image from "next/image";
@@ -16,7 +15,7 @@ const Midsection = () => {
     <>
       <div className={styles.content}>
         <div className={styles.header}>
-          <h1>A touch of brillance for every look</h1>
+          <h1>A Touch of brillance for every look</h1>
         </div>
         <div className={styles.container}>
           <div className={styles.img}>
@@ -34,7 +33,7 @@ const Midsection = () => {
             </div>
           </div>
           <div className={styles.product}>
-            {product.map((prod, index) => (
+            {catolouges.map((prod, index) => (
               <div key={index} className={styles.content}>
                 <div className={styles.imag}>{prod.img}</div>
                 <div className={styles.downwardDesign}>
@@ -90,33 +89,6 @@ const Midsection = () => {
                       </button>
                     </div>
                   </div>
-                </div>
-              </div>
-            ))}
-          </div>
-          <div className={styles.slides}>
-            {slides.map((prod, index) => (
-              <div key={index} className={styles.wrapper}>
-                <div className={styles.imag}>{prod.img}</div>
-                <div className={styles.text}>
-                  <h1>{prod.txt}</h1>
-                  <button className={styles.btn}>
-                    <p>{prod.btn}</p>
-                  </button>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          <div className={styles.mobileSlides}>
-            {slide.map((prod, index) => (
-              <div key={index} className={styles.wrapper}>
-                <div className={styles.imag}>{prod.img}</div>
-                <div className={styles.texts}>
-                  <h1>{prod.txt}</h1>
-                  <button className={styles.bt}>
-                    <p>{prod.btn}</p>
-                  </button>
                 </div>
               </div>
             ))}

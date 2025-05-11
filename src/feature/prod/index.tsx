@@ -2,7 +2,6 @@ import React from "react";
 import Navbar from "./component/navbar";
 import HeroPage from "./component/hero";
 import Header from "./component/header";
-import Footer from "../homepage/component/footer";
 
 const File = () => {
   return (
@@ -10,7 +9,6 @@ const File = () => {
       <Navbar />
       <Header />
       <HeroPage />
-      <Footer />
     </>
   );
 };

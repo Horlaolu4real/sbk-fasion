@@ -1,18 +1,19 @@
 import React from "react";
 import Navbar from "./component/navbar";
 import Hero from "./component/hero";
-import FeaturedProduct from "./component/featured-product";
+import ImageCarousel from "./component/featured-product"
 import Midsection from "./component/midsection";
-import Footer from "./component/footer";
+import Slides from "./component/slides";
+
 
 const File = () => {
   return (
     <>
       <Navbar />
       <Hero />
-      <FeaturedProduct />
+      <ImageCarousel/>
       <Midsection />
-      <Footer />
+      <Slides />
     </>
   );
 };

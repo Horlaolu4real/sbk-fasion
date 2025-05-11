@@ -16,7 +16,7 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <>
-      <footer className={styles.wrapper}>
+      <div className={styles.wrapper}>
         <div className={styles.contentOne}>
           <div className={styles.center_align}>
             <p>Limited Offers</p>
@@ -73,7 +73,7 @@ const Footer = () => {
             FAQ | Terms & Condition | Privacy Policy
           </h6>
         </div>
-      </footer>
+      </div>
     </>
   );
 };
