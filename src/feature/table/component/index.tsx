@@ -99,7 +99,7 @@ const TableRow = () => {
             <CheckBackIcon />
           </Link>
 
-          <p>CheckBack</p>
+          <p>CheckOut</p>
         </div>
         <div className={styles.tableGrid}>
           <div className={`${styles.row} ${styles.header}`}>
@@ -215,7 +215,7 @@ const TableRow = () => {
           </div>
           <div className={styles.btn}>
             <button className={styles.btnSubmit}>
-              <Link href={'./billing'}>
+              <Link href={"./billing"}>
                 <p>Proceed to checkout</p>
               </Link>
             </button>

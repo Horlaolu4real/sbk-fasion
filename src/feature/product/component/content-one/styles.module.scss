@@ -46,6 +46,7 @@
   .imageWrapper {
     width: 100%;
     display: flex;
+    // max-width: 100%;
     gap: 94px;
     // justify-content: space-between;
     @media (max-width: 768px) {
@@ -166,6 +167,7 @@
           line-height: 24px;
           letter-spacing: 0%;
           color: #7a7a7a;
+          max-width: 505px;
           @media (max-width: 768px) {
             font-size: 10px;
             line-height: 13.69px;
@@ -298,9 +300,10 @@
             height: auto;
           }
         }
-        .arra {
+        .arrayBtn {
           display: grid;
-          gap: 8px;
+          max-width: 505px;
+          gap: 4px;
           grid-template-columns: repeat(9, 1fr);
           grid-template-rows: repeat(2, 1fr);
           @media (max-width: 768px) {

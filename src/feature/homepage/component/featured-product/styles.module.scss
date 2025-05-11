@@ -1,88 +1,88 @@
-// .content {
-//   width: 100%;
-//   position: relative;
-//   padding-bottom: 6rem;
-//   transform: translateX(100%);
-//   opacity: 0;
-//   transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out;
+.content {
+  width: 100%;
+  position: relative;
+  padding-bottom: 6rem;
+  transform: translateX(100%);
+  opacity: 0;
+  transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out;
 
-//   &.slideIn {
-//     transform: translateX(0%);
-//     opacity: 1;
-//   }
+  &.slideIn {
+    transform: translateX(0%);
+    opacity: 1;
+  }
 
-//   @media (max-width: 768px) {
-//     padding-bottom: 2rem;
-//     height: 146px;
-//   }
+  @media (max-width: 768px) {
+    padding-bottom: 2rem;
+    height: 146px;
+  }
 
-//   .rotate {
-//     position: absolute;
-//     z-index: -1;
-//     right: 0;
-//     top: 80px;
-//     @media (max-width: 768px) {
-//       display: none;
-//     }
-//   }
-// }
+  .rotate {
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    top: 80px;
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+}
 
-// .carousel {
-//   display: flex;
-//   animation: scroll 30s linear infinite;
-//   gap: 20px;
-//   perspective: 1200px;
-//   width: fit-content;
-//   // align-items: stretch;
-//   margin-top: 2rem;
+.carousel {
+  display: flex;
+  animation: scroll 30s linear infinite;
+  gap: 20px;
+  perspective: 1200px;
+  width: fit-content;
+  // align-items: stretch;
+  margin-top: 2rem;
 
-//   @media (max-width: 768px) {
-//   }
-// }
+  @media (max-width: 768px) {
+  }
+}
 
-// .card {
-//   animation: stretchShrink 2s ease-in-out infinite;
-//   transform-origin: center bottom;
+.card {
+  // animation: shrinkStretch 2s ease-in-out infinite;
+  transform-origin: center bottom;
 
-//   img {
-//     width: 255px;
-//     height: 423px;
-//     object-fit: cover;
-//     border-radius: 15px;
+  img {
+    width: 255px;
+    height: 423px;
+    object-fit: cover;
+    border-radius: 15px;
 
-//     @media (max-width: 768px) {
-//       width: 75px;
-//       height: 120px;
-//     }
-//   }
-// }
+    @media (max-width: 768px) {
+      width: 75px;
+      height: 120px;
+    }
+  }
+}
 
-// @keyframes scroll {
-//   0% {
-//     transform: translateX(0%);
-//   }
-//   100% {
-//     transform: translateX(-50%);
-//   }
-// }
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
 
-// @keyframes stretchShrink {
-//   0% {
-//     transform: scaleY(1);
-//   }
-//   25% {
-//     transform: scaleY(1.1);
-//   }
-//   50% {
-//     transform: scaleY(1);
-//   }
-//   75% {
-//     transform: scaleY(0.95);
-//   }
-//   100% {
-//     transform: scaleY(1);
-//   }
-// }
+@keyframes shrinkStretch {
+  0% {
+    transform: scaleY(0.95);
+  }
+  25% {
+    transform: scaleY(1);
+  }
+  50% {
+    transform: scaleY(1.1);
+  }
+  75% {
+    transform: scaleY(1);
+  }
+  100% {
+    transform: scaleY(0.95);
+  }
+}
 
 // .content {
 //   width: 100%;

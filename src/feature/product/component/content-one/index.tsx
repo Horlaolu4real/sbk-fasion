@@ -180,7 +180,7 @@ const ContentOne = () => {
             </div>
             <div className={styles.layerThree}>
               <p>Sizes</p>
-              <div className={styles.arra}>
+              <div className={styles.arrayBtn}>
                 {number.map((btn, index) => (
                   <div key={index}>
                     <div className={styles.but}>

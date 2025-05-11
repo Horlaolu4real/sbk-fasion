@@ -37,6 +37,7 @@ const ContentOne = () => {
     psCard: "",
   });
 
+  const [select, setSelect] = useState("ship");
   const [selected, setSelected] = useState(false);
 
   const toggle = () => setSelected((prev) => !prev);
@@ -150,16 +151,27 @@ const ContentOne = () => {
             <div className={styles.detailPage}>
               <h3>Delivery details</h3>
               <div className={styles.flx}>
-                <div className={styles.ship}>
+                <button
+                  onClick={() => setSelect("ship")}
+                  className={
+                    select === "ship" ? styles.active : styles.inactive
+                  }
+                >
                   <p>Ship</p>
                   <DeliveryIcon />
-                </div>
-                <div className={styles.ships}>
+                </button>
+                <button
+                  onClick={() => setSelect("pickup")}
+                  className={
+                    select === "pickup" ? styles.active : styles.inactive
+                  }
+                >
                   <p>Pick up</p>
                   <LayerIcon />
-                </div>
+                </button>
               </div>
             </div>
+
             <div className={styles.secondRow}>
               <form onSubmit={submit}>
                 <div className={styles.tag}>
