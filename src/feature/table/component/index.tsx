@@ -176,16 +176,19 @@ const TableRow = () => {
         <div className={styles.mobileProd}>
           {mobileTable.map((txt, index) => (
             <div key={index} className={styles.cover}>
-              <div className={styles.imgContent}>
-                <div className={styles.imgwidth}>{txt.product}</div>
-                <div className={styles.para}>
-                  <div className={styles.txt}>
-                    <h1 className={styles.name}>{txt.name}</h1>
-                    <p className={styles.price}>{txt.price}</p>
+              <div className={styles.row}>
+                <div className={styles.imgContent}>
+                  <div className={styles.imgwidth}>{txt.product}</div>
+                  <div className={styles.para}>
+                    <div className={styles.txt}>
+                      <h1 className={styles.name}>{txt.name}</h1>
+                      <p className={styles.price}>{txt.price}</p>
+                    </div>
                   </div>
                 </div>
-                <div className={styles.bin}>{txt.bin}</div>
+                <div className={styles.iconBin}>{txt.bin}</div>
               </div>
+
               <div className={styles.btnAmount}>
                 <div className={styles.size}>
                   <p>{txt.size}</p>

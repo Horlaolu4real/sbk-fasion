@@ -13,18 +13,18 @@ import slideOne from "@/assest/image/slide/Frame 1686562450 (2).svg";
 import slideTwo from "@/assest/image/slide/Frame 1686562451 (1).svg";
 import slideThree from "@/assest/image/slide/Frame 1686562452 (1).svg";
 
-import img from "@/assest/image/mobile/Frame 1686562452 (2).svg";
+// import img from "@/assest/image/mobile/Frame 1686562452 (2).svg";
 import imgThree from "@/assest/image/mobile/Frame 1686562451 (2).svg";
 import imgTwo from "@/assest/image/mobile/Frame 1686562450 (3).svg";
 
-import One from "@/assest/image/mobile/one.jpg"
-import Two from "@/assest/image/mobile/two.jpg"
-import Three from "@/assest/image/mobile/three.jpg"
-import Four from "@/assest/image/mobile/four.jpg"
-import Five from "@/assest/image/mobile/five.jpg"
-import Six from "@/assest/image/mobile/six.jpg"
-import Seven from "@/assest/image/mobile/seven.jpg"
-import Eight from "@/assest/image/mobile/eight.jpg"
+import One from "@/assest/image/mobile/one.jpg";
+import Two from "@/assest/image/mobile/two.jpg";
+import Three from "@/assest/image/mobile/three.jpg";
+import Four from "@/assest/image/mobile/four.jpg";
+import Five from "@/assest/image/mobile/five.jpg";
+import Six from "@/assest/image/mobile/six.jpg";
+import Seven from "@/assest/image/mobile/seven.jpg";
+import Eight from "@/assest/image/mobile/eight.jpg";
 
 export const product = [
   {
@@ -112,8 +112,6 @@ export const prod = [
   },
 ];
 
-
-
 export const slides = [
   {
     img: <Image src={slideOne} alt="one" />,
@@ -135,19 +133,13 @@ export const slides = [
 ];
 export const slide = [
   {
-    img: <Image src={img} alt="one" />,
-    txt: "Slide into comfort and style, the perfect choice laid back luxury on any day",
-    btn: "Shop slides",
-  },
-
-  {
-    img: <Image src={imgTwo} alt="one" />,
+    img:  imgTwo,
     txt: "Make your presence unforgettable, Discover scents that tell your story",
     btn: "Shop perfumes",
   },
 
   {
-    img: <Image src={imgThree} alt="one" />,
+    img: imgThree,
     txt: "Carry confidence, Our bag blends function, fashion, and finesse.",
     btn: "Shop Bags",
   },

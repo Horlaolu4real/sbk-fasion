@@ -1,14 +1,15 @@
 import React from "react";
 import styles from "./styles.module.scss";
-// import { product } from "@/feature/homepage/folder/index";
-import { prod } from "@/feature/homepage/folder";
-// import imgOne from "@/assest/image/Frame 1686562443.svg";
+// import { prod } from "@/feature/homepage/folder";
 import imgOne from "@/assest/image/detail/cover.jpg";
 import { catolouges } from "@/feature/prod/component/file";
 import Link from "next/link";
+import { mobileCard } from "../../mobile-card";
 
 import Image from "next/image";
-import { BlurStar, GoldStar, SmallStarsIcon } from "@/assest/icon";
+import { BlurStar, GoldStar } from "@/assest/icon";
+import Slides from "../slides";
+import ListingProperties from "../../listing-card";
 
 const Midsection = () => {
   return (
@@ -64,35 +65,17 @@ const Midsection = () => {
               </div>
             ))}
           </div>
-          <div className={styles.mobileProduct}>
-            {prod.map((ftr, index) => (
-              <div key={index} className={styles.content}>
-                <div className={styles.wrapper}>{ftr.img}</div>
-                <div className={styles.txtContent}>
-                  <div className={styles.upTxt}>
-                    <h6>{ftr.txt}</h6>
-                    <p>{ftr.amount}</p>
-                  </div>
-                  <div className={styles.button}>
-                    <SmallStarsIcon />
-                    <div className={styles.btnView}>
-                      <button className={styles.btn}>
-                        <Link href={"./detail"}>
-                          <p>View More</p>
-                        </Link>
-                      </button>
-
-                      <button className={styles.btnAdd}>
-                        <Link href={"./calculate"}>
-                          <p>Add to cart</p>
-                        </Link>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
+          <div className={styles.mobileCard}>
+            {mobileCard.map((feat, index) => (
+              <ListingProperties
+                key={index}
+                {...feat}
+                naira={Number(feat.naira)}
+              />
             ))}
           </div>
+
+          <Slides />
         </div>
       </div>
     </>

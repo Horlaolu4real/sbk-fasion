@@ -1,14 +1,15 @@
 .wrapper {
   width: 100%;
-  max-width: 1600;
+  max-width: 1440px;
   margin-bottom: 60px;
   @media (max-width: 768px) {
+   
   }
   .contentWrapper {
     padding: 20px 60px;
     display: flex;
-    // justify-content: space-between;
-    gap: 12em;
+    justify-content: space-between;
+    // gap: 12em;
     
     height: 684px;
 

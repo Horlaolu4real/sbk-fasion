@@ -333,9 +333,12 @@ const ContentOne = () => {
             </div>
             <div className={styles.btnSpace}>
               <div className={styles.space}>
-                <div className={styles.code}>
-                  <p>Coupon Code</p>
-                </div>
+                <input
+                  type="text"
+                  placeholder="Coupon Code"
+                  className={styles.code}
+                />
+
                 <button className={styles.apply}>
                   <p>Apply Coupon</p>
                 </button>

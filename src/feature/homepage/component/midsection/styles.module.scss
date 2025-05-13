@@ -2,8 +2,9 @@
   height: 100%;
   width: 100%;
   padding-top: 2rem;
-  max-width: 100%;
-  // padding-bottom: 3;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-bottom: 3rem;
   @media (max-width: 768px) {
   }
   .header {
@@ -47,8 +48,7 @@
   .container {
     display: flex;
 
-    padding-left: 60px;
-    padding-right: 60px;
+    padding: 0px 60px;
     flex-direction: column;
     margin: 0 auto;
     gap: 10px;
@@ -69,7 +69,6 @@
         height: 458px;
         object-fit: cover;
         border-radius: 12px;
-        // overflow: 1;
         @media (max-width: 768px) {
           height: 124px;
           border-radius: 3.25px;
@@ -247,119 +246,15 @@
         }
       }
     }
-    .mobileProduct {
+    .mobileCard {
       display: none;
       @media (max-width: 768px) {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        justify-content: space-between;
+        grid-template-columns: 1fr 1fr;
+        // justify-content: space-between;
+        gap: 32px;
         width: 100%;
-      }
-      .content {
-        display: flex;
-        flex-direction: column;
-        gap: 0;
-
-        .wrapper {
-          width: 100%;
-          height: 87px;
-          img {
-            width: 92px;
-            height: 100%;
-            object-fit: cover;
-            border-radius: 3.26px 3.26px 0px 0px;
-          }
-        }
-        .txtContent {
-          width: 92px;
-          background-color: #fafafa;
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between;
-          padding-top: 0.25em;
-          gap: 0px;
-          padding-bottom: 0.5em;
-          border-radius: 0px 0px 2.18px 2.18px;
-          padding-left: 2.7px;
-          .upTxt {
-            width: 100%;
-            margin: 0 auto;
-            height: auto;
-            display: flex;
-            flex-direction: column;
-            gap: 2px;
-
-            h6 {
-              font-family: Open Sans;
-              font-weight: 400;
-              font-size: 10px;
-              line-height: 100%;
-              letter-spacing: 0%;
-            }
-            p {
-              font-family: Open Sans;
-              font-weight: 700;
-              font-size: 8px;
-              line-height: 100%;
-              letter-spacing: 0%;
-              color: #db5825;
-            }
-          }
-          .button {
-            width: 100%;
-            height: auto;
-            margin: 0 auto;
-            display: flex;
-            flex-direction: column;
-            gap: 2px;
-
-            .btnView {
-              display: flex;
-              gap: 3.26px;
-              align-items: center;
-              .btn {
-                width: 39px;
-                height: 12px;
-                border-radius: 8.16px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                padding: 2px;
-                border: none;
-
-                p {
-                  margin: 0;
-                  font-size: 6px;
-                  font-family: "Open Sans", sans-serif;
-                  font-weight: 500;
-                  text-align: center;
-                }
-              }
-              .btnAdd {
-                width: 37px;
-                height: 12px;
-                outline: none;
-                border: 0.27px solid #db5825;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                border-radius: 8.16px;
-                padding: 2px;
-                background-color: #db5825;
-                p {
-                  width: 33px;
-                  height: 8px;
-                  font-family: Open Sans;
-                  font-weight: 500;
-                  font-size: 6px;
-                  color: #ffffff;
-                  text-align: center;
-                }
-              }
-            }
-          }
-        }
+        max-width: 100%;
       }
     }
   }

@@ -1,7 +1,14 @@
 "use client";
 import React, { useState } from "react";
 import styles from "./styles.module.scss";
-import { DarkIcon, MinusIcon, PlusIcon } from "@/assest/icon";
+import {
+  BlurStar,
+  DarkIcon,
+  GoldStar,
+  MinusIcon,
+  PlusIcon,
+  RedIcon,
+} from "@/assest/icon";
 import Link from "next/link";
 // import image from "@/assest/image/detail/Frame 1686561798.svg";
 import Image from "next/image";
@@ -9,6 +16,8 @@ import imgOne from "@/assest/image/detail/effectone.jpg";
 import imgTwo from "@/assest/image/detail/effectwo.jpg";
 import imgThree from "@/assest/image/detail/effecthree.jpg";
 import imgFour from "@/assest/image/detail/effectfour.jpg";
+import star from "@/assest/image/Frame 1686561846.svg";
+import { review } from "../content-two";
 
 export const number = [
   { txt: 45 },
@@ -103,50 +112,81 @@ const ContentOne = () => {
                 className={styles.rounded_medium}
               />
             </div>
-          </div>
-          <div className={styles.mobileContainer}>
-            <div className={styles.mainImg}>
-              <Image
-                src={images[currentIndex]}
-                alt="big"
-                // width={352}
-                // height={284}
-                className={styles.rounded_mediums}
-              />
+            <div className={styles.mobileContainer}>
+              <div className={styles.mainImgs}>
+                <Image
+                  src={images[currentIndex]}
+                  alt="big"
+                  // width={352}
+                  // height={284}
+                  className={styles.rounded_mediums}
+                />
+              </div>
+              <div className={styles.mobileFlx}>
+                <Image
+                  src={images[0]}
+                  alt="one"
+                  // width={141}
+                  // height={128}
+                  onClick={() => setCurrentIndex(0)}
+                  className={styles.rounded_medium}
+                />
+                <Image
+                  src={images[1]}
+                  alt="two"
+                  // width={141}
+                  // height={128}
+                  onClick={() => setCurrentIndex(1)}
+                  className={styles.rounded_medium}
+                />
+                <Image
+                  src={images[2]}
+                  alt="three"
+                  // width={141}
+                  // height={128}
+                  onClick={() => setCurrentIndex(2)}
+                  className={styles.rounded_medium}
+                />
+                <Image
+                  src={images[3]}
+                  alt="four"
+                  // width={141}
+                  // height={128}
+                  onClick={() => setCurrentIndex(3)}
+                  className={styles.rounded_medium}
+                />
+              </div>
             </div>
-            <div className={styles.mobileFlx}>
-              <Image
-                src={images[0]}
-                alt="one"
-                // width={141}
-                // height={128}
-                onClick={() => setCurrentIndex(0)}
-                className={styles.rounded_medium}
-              />
-              <Image
-                src={images[1]}
-                alt="two"
-                // width={141}
-                // height={128}
-                onClick={() => setCurrentIndex(1)}
-                className={styles.rounded_medium}
-              />
-              <Image
-                src={images[2]}
-                alt="three"
-                // width={141}
-                // height={128}
-                onClick={() => setCurrentIndex(2)}
-                className={styles.rounded_medium}
-              />
-              <Image
-                src={images[3]}
-                alt="four"
-                // width={141}
-                // height={128}
-                onClick={() => setCurrentIndex(3)}
-                className={styles.rounded_medium}
-              />
+
+            <div className={styles.content}>
+              <h3>Reviews</h3>
+              <div className={styles.wrappers}>
+                {review.map((task, index) => (
+                  <div key={index} className={styles.gap}>
+                    <div className={styles.txtSheet}>
+                      {task.img}
+                      <div className={styles.card}>
+                        <div className={styles.first}>
+                          <div className={styles.nameTag}>
+                            <h3>{task.name}</h3>
+                            <p>3 days ago</p>
+                          </div>
+                          <div>
+                            <GoldStar />
+                            <GoldStar />
+                            <GoldStar />
+                            <GoldStar />
+                            <BlurStar />
+                          </div>
+                        </div>
+                        <div className={styles.second}>
+                          <p>{task.txt}</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
 
@@ -194,6 +234,41 @@ const ContentOne = () => {
               <button>
                 <p>Add to Cart</p>
               </button>
+            </div>
+            <div className={styles.contentTwo}>
+              <h3>Ratings</h3>
+              <div className={styles.ratingStyle}>
+                <div>
+                  <Image src={star} alt="star" />
+                </div>
+                <div className={styles.reviewLine}>
+                  <div className={styles.line}>
+                    <p>1</p>
+                    <RedIcon />
+                    <p>45</p>
+                  </div>
+                  <div className={styles.line}>
+                    <p>1</p>
+                    <RedIcon />
+                    <p>45</p>
+                  </div>
+                  <div className={styles.line}>
+                    <p>1</p>
+                    <RedIcon />
+                    <p>45</p>
+                  </div>
+                  <div className={styles.line}>
+                    <p>1</p>
+                    <RedIcon />
+                    <p>45</p>
+                  </div>
+                  <div className={styles.line}>
+                    <p>1</p>
+                    <RedIcon />
+                    <p>45</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

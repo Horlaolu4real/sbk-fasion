@@ -4,6 +4,8 @@
   padding-right: 60px;
   padding-top: 40px;
   padding-bottom: 40px;
+  margin: 0 auto;
+  max-width: 1440px;
   @media (max-width: 768px) {
     padding: 0px 20px;
     margin-bottom: 2rem;
@@ -214,6 +216,10 @@
           line-height: 100%;
           letter-spacing: 0%;
           color: #8e8e8e;
+          @media (max-width: 768px) {
+            // text-align: center;
+            // vertical-align: middle;
+          }
         }
         .dark {
           font-family: Open Sans;
@@ -269,45 +275,53 @@
       // height: 100%;
       // width: 100%;
       // max-width: 392px;
-
-      .imgContent {
+      .row {
         display: flex;
-        gap: 12px;
-        align-items: center;
-        width: 100%;
-        max-width: 344px;
-        height: 41px;
-        .para {
+        justify-content: space-between;
+        .imgContent {
           display: flex;
-          justify-content: space-between;
-
-          .txt {
+          gap: 12px;
+          align-items: center;
+          width: 100%;
+          max-width: 344px;
+          height: 41px;
+          .para {
             display: flex;
-            gap: 6px;
-            flex-direction: column;
-            width: 120px;
-            height: 39px;
+            justify-content: space-between;
 
-            .name {
-              height: 14px;
-              font-family: Open Sans;
-              font-weight: 500;
-              font-size: 10px;
-              line-height: 100%;
-              letter-spacing: 0%;
-            }
-            .price {
-              height: 19px;
-              font-family: Open Sans;
-              font-weight: 500;
-              font-size: 14px;
-              line-height: 100%;
-              letter-spacing: 0%;
-              color: #7a7a7a;
+            .txt {
+              display: flex;
+              gap: 6px;
+              flex-direction: column;
+              width: 120px;
+              height: 39px;
+
+              .name {
+                width: 145px;
+                height: 19px;
+                font-family: Open Sans;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 100%;
+                letter-spacing: 0%;
+                vertical-align: middle;
+              }
+              .price {
+                height: 19px;
+                font-family: Open Sans;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 100%;
+                letter-spacing: 0%;
+                color: #7a7a7a;
+              }
             }
           }
         }
+        .iconBin {
+        }
       }
+
       .btnAmount {
         display: flex;
         width: 100%;
@@ -368,6 +382,23 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      h3 {
+        font-family: Manrope;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        color: #8e8e8e;
+      }
+      p {
+        font-family: Manrope;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        // text-align: center;
+        // vertical-align: middle;
+      }
     }
     .btn {
       display: flex;

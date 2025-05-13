@@ -1,0 +1,20 @@
+.wrapper {
+  display: none;
+  @media (max-width: 769px) {
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+  }
+  .mobileCard {
+    display: none;
+    @media (max-width: 768px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      // justify-content: space-between;
+      gap: 32px;
+      width: 100%;
+      max-width: 390px;
+    }
+  }
+}

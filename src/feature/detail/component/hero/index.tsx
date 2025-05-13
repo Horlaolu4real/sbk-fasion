@@ -3,6 +3,7 @@ import styles from "./styles.module.scss";
 import Image from "next/image";
 import head from "@/assest/productImage/bags.jpg";
 import { catolouge } from "@/feature/prod/component/file";
+import { mobileCard } from "@/feature/homepage/mobile-card";
 import Link from "next/link";
 
 import {
@@ -10,11 +11,11 @@ import {
   GoldStar,
   BlurStar,
   CheckBackIcon,
-  SmallStarsIcon,
   DropDownIcon,
   // FilterIcon,
   // WhiteDropdownIcon,
 } from "@/assest/icon";
+import ListingProperties from "@/feature/homepage/listing-card";
 
 const Hero = () => {
   return (
@@ -69,30 +70,14 @@ const Hero = () => {
                 </div>
               </div>
             ))}
-            {catolouge.map((prod, index) => (
-              <div key={index} className={styles.mobileProduct}>
-                <div className={styles.imgHandle}>{prod.img}</div>
-                <div className={styles.downDesign}>
-                  <div className={styles.MobileContent}>
-                    <p className={styles.prod}>Bvlgari Hedge S..</p>
-                    <h3 className={styles.currency}> {prod.amount}</h3>
-                  </div>
-                  <div className={styles.last}>
-                    <SmallStarsIcon />
-                    <div className={styles.btnSpace}>
-                      <button className={styles.btn}>
-                        <Link href={"./detail"}>
-                          <p>View more</p>
-                        </Link>
-                      </button>
-
-                      <button className={styles.btnRed}>
-                        <p>Add to Cart</p>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
+          </div>
+          <div className={styles.mobileCard}>
+            {mobileCard.map((feat, index) => (
+              <ListingProperties
+                key={index}
+                {...feat}
+                naira={Number(feat.naira)}
+              />
             ))}
           </div>
         </div>

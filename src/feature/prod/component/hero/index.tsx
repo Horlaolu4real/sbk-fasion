@@ -1,8 +1,10 @@
 import React from "react";
 import styles from "./styles.module.scss";
 import { catolouge } from "../file";
-import { BlurStar, GoldStar, SmallStarsIcon } from "@/assest/icon";
+import { BlurStar, GoldStar } from "@/assest/icon";
 import Link from "next/link";
+import ListingProperties from "@/feature/homepage/listing-card";
+import { mobileCard } from "@/feature/homepage/mobile-card";
 
 const HeroPage = () => {
   return (
@@ -35,28 +37,14 @@ const HeroPage = () => {
                 </div>
               </div>
             ))}
-            {catolouge.map((prod, index) => (
-              <div key={index} className={styles.mobileProduct}>
-                <div className={styles.imgHandle}>{prod.img}</div>
-                <div className={styles.downDesign}>
-                  <div className={styles.MobileContent}>
-                    <p className={styles.prod}>Bvlgari Hedge S..</p>
-                    <h3 className={styles.currency}> {prod.amount}</h3>
-                  </div>
-                  <div className={styles.last}>
-                    <SmallStarsIcon />
-                    <div className={styles.btnSpace}>
-                      <button className={styles.btn}>
-                        <p>View more</p>
-                      </button>
-
-                      <button className={styles.btnRed}>
-                        <p>Add to Cart</p>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
+          </div>
+          <div className={styles.mobileCard}>
+            {mobileCard.map((feat, index) => (
+              <ListingProperties
+                key={index}
+                {...feat}
+                naira={Number(feat.naira)}
+              />
             ))}
           </div>
         </div>
