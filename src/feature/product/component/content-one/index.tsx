@@ -5,9 +5,11 @@ import {
   BlurStar,
   DarkIcon,
   GoldStar,
+  LeftGrayIcon,
   MinusIcon,
   PlusIcon,
   RedIcon,
+  RightDarkIcon,
 } from "@/assest/icon";
 import Link from "next/link";
 // import image from "@/assest/image/detail/Frame 1686561798.svg";
@@ -49,6 +51,14 @@ const ContentOne = () => {
   //   setCurrentIndex((prev) => prev + 1);
   // };
 
+  const increment = () => {
+    setCurrentIndex((prev) => (prev + 1) % images.length);
+  };
+
+  const decrement = () => {
+    setCurrentIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));
+  };
+
   const [currentIndes, setCurrentIndes] = useState(0);
   const decrements = () => {
     setCurrentIndes((prev) => prev - 1);
@@ -78,83 +88,60 @@ const ContentOne = () => {
                 className={styles.rounded_medium}
               />
             </div>
-            <div className={styles.imagFlx}>
-              <Image
-                src={images[0]}
-                alt="one"
-                width={116}
-                height={105}
-                onClick={() => setCurrentIndex(0)}
-                className={styles.rounded_medium}
-              />
-              <Image
-                src={images[1]}
-                alt="two"
-                width={116}
-                height={105}
-                onClick={() => setCurrentIndex(1)}
-                className={styles.rounded_medium}
-              />
-              <Image
-                src={images[2]}
-                alt="three"
-                width={116}
-                height={105}
-                onClick={() => setCurrentIndex(2)}
-                className={styles.rounded_medium}
-              />
-              <Image
-                src={images[3]}
-                alt="four"
-                width={116}
-                height={105}
-                onClick={() => setCurrentIndex(3)}
-                className={styles.rounded_medium}
-              />
+
+            <div className={styles.thumbWrapper}>
+              <button onClick={decrement} className={styles.arrowLeft}>
+                <LeftGrayIcon />
+              </button>
+              <div className={styles.imagFlx}>
+                {images.map((img, index) => (
+                  <Image
+                    key={index}
+                    src={img}
+                    alt={`thumb-${index}`}
+                    width={141}
+                    height={127}
+                    onClick={() => setCurrentIndex(index)}
+                    className={styles.rounded_medium}
+                  />
+                ))}
+              </div>
+
+              <button onClick={increment} className={styles.arrowRight}>
+                <RightDarkIcon />
+              </button>
             </div>
+
             <div className={styles.mobileContainer}>
               <div className={styles.mainImgs}>
                 <Image
                   src={images[currentIndex]}
                   alt="big"
-                  // width={352}
-                  // height={284}
                   className={styles.rounded_mediums}
                 />
               </div>
-              <div className={styles.mobileFlx}>
-                <Image
-                  src={images[0]}
-                  alt="one"
-                  // width={141}
-                  // height={128}
-                  onClick={() => setCurrentIndex(0)}
-                  className={styles.rounded_medium}
-                />
-                <Image
-                  src={images[1]}
-                  alt="two"
-                  // width={141}
-                  // height={128}
-                  onClick={() => setCurrentIndex(1)}
-                  className={styles.rounded_medium}
-                />
-                <Image
-                  src={images[2]}
-                  alt="three"
-                  // width={141}
-                  // height={128}
-                  onClick={() => setCurrentIndex(2)}
-                  className={styles.rounded_medium}
-                />
-                <Image
-                  src={images[3]}
-                  alt="four"
-                  // width={141}
-                  // height={128}
-                  onClick={() => setCurrentIndex(3)}
-                  className={styles.rounded_medium}
-                />
+              <div className={styles.mobileWrapper}>
+                <button onClick={decrement} className={styles.arrowLeft}>
+                  <LeftGrayIcon />
+                </button>
+
+                <div className={styles.mobileFlx}>
+                  {images.map((img, i) => (
+                    <Image
+                      key={i}
+                      src={img}
+                      alt={`img-${i}`}
+                      width={141}
+                      height={128}
+                      onClick={() => setCurrentIndex(i)}
+                      className={styles.rounded_medium}
+                    />
+                  ))}
+                </div>
+
+                <button onClick={increment} className={styles.arrowRight}>
+                  <RightDarkIcon />
+                </button>
               </div>
             </div>
 
@@ -214,7 +201,7 @@ const ContentOne = () => {
                   </p>
                 </div>
                 <h6>
-                  Only<span>15 items</span>left, dont miss out.
+                  Only <span>15 items</span> left, dont miss out.
                 </h6>
               </div>
             </div>

@@ -6,8 +6,8 @@ import {
   CheckBackIcon,
   DarkDropIcon,
   LeftAIcon,
-  MinusIcon,
-  PlusIcon,
+  // MinusIcon,
+  // PlusIcon,
   RedBinIcon,
 } from "@/assest/icon";
 import Image from "next/image";
@@ -132,11 +132,11 @@ const TableRow = () => {
                 </div>
                 <div className={styles.btns}>
                   <p onClick={decrement} className={styles.minus}>
-                    <MinusIcon />
+                    -
                   </p>
                   {index}
                   <p onClick={increment} className={styles.plus}>
-                    <PlusIcon />
+                    +
                   </p>
                 </div>
                 <div className={styles.price}>{src.price}</div>
