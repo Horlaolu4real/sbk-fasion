@@ -219,7 +219,9 @@ const ContentOne = () => {
             </div>
             <div className={styles.layerFour}>
               <button>
-                <p>Add to Cart</p>
+                <Link href={"./calculate"}>
+                  <p>Add to Cart</p>
+                </Link>
               </button>
             </div>
             <div className={styles.contentTwo}>
