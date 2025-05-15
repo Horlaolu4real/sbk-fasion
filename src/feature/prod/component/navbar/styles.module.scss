@@ -150,4 +150,64 @@
       }
     }
   }
+  .mobileMenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 100vh;
+    background-color: white;
+    padding: 20px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    animation: slideIn 0.3s ease-in-out forwards;
+
+    .closeIcon {
+      align-self: flex-end;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    .mobileList {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      li {
+        font-size: 18px;
+        font-weight: 500;
+      }
+    }
+
+    .mobileInputField {
+      position: relative;
+      .field {
+        border-radius: 4px;
+        width: 100%;
+        padding: 10px 16px;
+        color: #000;
+        border: 1px solid #f2f2f2;
+        background-color: #f5f5f5;
+      }
+
+      .searchIcon {
+        position: absolute;
+        right: 18px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+
+  @keyframes slideIn {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
 }
