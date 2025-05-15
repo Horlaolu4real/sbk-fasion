@@ -21,7 +21,7 @@
     margin: 0 auto;
     gap: 4px;
     padding: 0.25em 0.1em;
-    // width: 174px;
+    // width: 174px;gi
     background-color: #f6f4f2;
     .first_slides {
       height: auto;
@@ -53,12 +53,12 @@
       gap: 2px;
       .btn {
         display: flex;
-        gap: 4px;
+        gap: 2px;
         .viewBtn {
           border: 0.27px solid #000;
           border-radius: 30px;
           height: 28px;
-        //   width: 81px;
+          width: 75px;
           padding: 6px 10px;
           p {
             font-family: Open Sans;
@@ -72,12 +72,13 @@
         .addBtn {
           border-radius: 30px;
           height: 28px;
-            // width: 100%;
-          padding: 6px 10px;
+          width: 81px;
+          padding: 3.5px 10px;
           border: none;
           background-color: #db5825;
           p {
             font-family: Open Sans;
+            width: 65px;
             height: 16px;
             font-weight: 500;
             font-size: 10px;

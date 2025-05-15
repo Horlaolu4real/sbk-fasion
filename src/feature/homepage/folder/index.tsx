@@ -13,7 +13,7 @@ import slideOne from "@/assest/image/slide/Frame 1686562450 (2).svg";
 import slideTwo from "@/assest/image/slide/Frame 1686562451 (1).svg";
 import slideThree from "@/assest/image/slide/Frame 1686562452 (1).svg";
 
-// import img from "@/assest/image/mobile/Frame 1686562452 (2).svg";
+import img from "@/assest/image/mobile/Frame 1686562452 (2).svg";
 import imgThree from "@/assest/image/mobile/Frame 1686562451 (2).svg";
 import imgTwo from "@/assest/image/mobile/Frame 1686562450 (3).svg";
 
@@ -133,13 +133,18 @@ export const slides = [
 ];
 export const slide = [
   {
-    img:  imgTwo,
-    txt: "Make your presence unforgettable, Discover scents that tell your story",
-    btn: "Shop perfumes",
+    img: imgTwo,
+    txt: "Slide into comfort and style, the perfect choice laid back luxury on any day",
+    btn: "Shop Slides",
   },
 
   {
     img: imgThree,
+    txt: "Make your presence unforgettable, Discover scents that tell your story",
+    btn: "Shop perfumes",
+  },
+  {
+    img: img,
     txt: "Carry confidence, Our bag blends function, fashion, and finesse.",
     btn: "Shop Bags",
   },
