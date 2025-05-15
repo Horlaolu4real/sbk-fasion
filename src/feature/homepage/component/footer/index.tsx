@@ -37,10 +37,40 @@ const Footer = () => {
                 <Image src={font} alt="fnt" />
               </Link>
               <div className={styles.icons}>
-                <TwitterIcon />
-                <InstagramIcon />
-                <FacebookIcon />
-                <LinkdenIcon />
+                <a
+                  href="https://www.twitter.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {" "}
+                  <TwitterIcon />
+                </a>
+
+                <a
+                  href="https://www.instagram.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <InstagramIcon />
+                </a>
+
+                <a
+                  href="https://www.facebook.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {" "}
+                  <FacebookIcon />
+                </a>
+
+                <a
+                  href="https://www.linkedin.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {" "}
+                  <LinkdenIcon />
+                </a>
               </div>
 
               <div className={styles.input}>
@@ -58,10 +88,40 @@ const Footer = () => {
               </div>
             </div>
             <div className={styles.icon}>
-              <TwitterIcon />
-              <InstagramIcon />
-              <FacebookIcon />
-              <LinkdenIcon />
+              <a
+                href="https://www.twitter.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {" "}
+                <TwitterIcon />
+              </a>
+
+              <a
+                href="https://www.instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <InstagramIcon />
+              </a>
+
+              <a
+                href="https://www.facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {" "}
+                <FacebookIcon />
+              </a>
+
+              <a
+                href="https://www.linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {" "}
+                <LinkdenIcon />
+              </a>
             </div>
           </div>
           <p>

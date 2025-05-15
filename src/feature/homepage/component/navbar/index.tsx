@@ -30,7 +30,7 @@ const Navbar: React.FC = () => {
         <div className={styles.list}>
           <ul>
             <li className={styles.home}>
-              <Link href={"/"}>
+              <Link href={"/home"}>
                 <p>Home</p>
               </Link>
             </li>
@@ -45,7 +45,7 @@ const Navbar: React.FC = () => {
               </Link>
             </li>
             <li className={styles.contact}>
-              <Link href={"/contact"}>
+              <Link href={"/billing"}>
                 <p>Contact us</p>
               </Link>
             </li>
@@ -64,8 +64,12 @@ const Navbar: React.FC = () => {
             </div>
           </div>
           <div className={styles.icon}>
-            <LoveIcon />
-            <CartIcon />
+            <Link href="./shopping">
+              <LoveIcon />
+            </Link>
+            <Link href="./billing">
+              <CartIcon />
+            </Link>
           </div>
         </div>
       </div>
@@ -79,7 +83,7 @@ const Navbar: React.FC = () => {
 
           <ul className={styles.mobileList}>
             <li>
-              <Link href={"/"}>Home</Link>
+              <Link href={"/home"}>Home</Link>
             </li>
             <li>
               <Link href={"/categories"}>Categories</Link>
@@ -88,7 +92,7 @@ const Navbar: React.FC = () => {
               <Link href={"/featured Products"}>Featured Products</Link>
             </li>
             <li>
-              <Link href={"/contact"}>Contact Us</Link>
+              <Link href={"/billing"}>Contact Us</Link>
             </li>
           </ul>
 
@@ -109,5 +113,3 @@ const Navbar: React.FC = () => {
 };
 
 export default Navbar;
-
-
