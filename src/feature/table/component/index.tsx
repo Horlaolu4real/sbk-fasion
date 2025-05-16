@@ -6,6 +6,8 @@ import {
   CheckBackIcon,
   DarkDropIcon,
   LeftAIcon,
+  MinusIcon,
+  PlusIcon,
   // MinusIcon,
   // PlusIcon,
   RedBinIcon,
@@ -131,14 +133,15 @@ const TableRow = () => {
                   <DarkDropIcon />
                 </div>
                 <div className={styles.btns}>
-                  <p onClick={decrement} className={styles.minus}>
-                    -
-                  </p>
-                  {index}
-                  <p onClick={increment} className={styles.plus}>
-                    +
-                  </p>
+                  <div onClick={decrement}>
+                    <MinusIcon />
+                  </div>
+                  <p>{index}</p>
+                  <div onClick={increment}>
+                    <PlusIcon />
+                  </div>
                 </div>
+
                 <div className={styles.price}>{src.price}</div>
                 <div>
                   <BinIcon />
@@ -195,9 +198,15 @@ const TableRow = () => {
                   <DarkDropIcon />
                 </div>
                 <div className={styles.sizeChange}>
-                  <p onClick={decrease}>{/* <MinusIcon /> */}-</p>
-                  {mobileIndex}
-                  <p onClick={increase}>{/* <PlusIcon /> */}+</p>
+                  <div onClick={decrease}>
+                    {" "}
+                    <MinusIcon />
+                  </div>
+                  <p>{mobileIndex}</p>
+                  <div onClick={increase}>
+                    {" "}
+                    <PlusIcon />
+                  </div>
                 </div>
               </div>
             </div>

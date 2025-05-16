@@ -2,14 +2,15 @@ import React from "react";
 import styles from "./styles.module.scss";
 // import { prod } from "@/feature/homepage/folder";
 import imgOne from "@/assest/image/detail/cover.jpg";
-import { catolouges } from "@/feature/prod/component/file";
-import Link from "next/link";
+import { catolouges } from "../../mobile-card";
+// import Link from "next/link";
 import { mobileCard } from "../../mobile-card";
 
 import Image from "next/image";
-import { BlurStar, GoldStar } from "@/assest/icon";
+// import { BlurStar, GoldStar } from "@/assest/icon";
 import Slides from "../slides";
 import ListingProperties from "../../listing-card";
+import DesktopProperties from "../../desktop-card";
 
 const Midsection = () => {
   return (
@@ -34,37 +35,15 @@ const Midsection = () => {
             </div>
           </div>
           <div className={styles.product}>
-            {catolouges.map((prod, index) => (
-              <div key={index} className={styles.content}>
-                <div className={styles.imag}>{prod.img}</div>
-                <div className={styles.downwardDesign}>
-                  <div className={styles.text}>
-                    <p>{prod.txt}</p>
-                    <h1 className={styles.naira}>{prod.amount}</h1>
-                  </div>
-
-                  <div className={styles.flx}>
-                    <GoldStar />
-                    <GoldStar />
-                    <GoldStar />
-                    <GoldStar />
-                    <BlurStar />
-                  </div>
-                  <div className={styles.btnSpace}>
-                    <Link href={"./shopping"}>
-                      <button className={styles.btn}>
-                        <p>View More</p>
-                      </button>
-                    </Link>
-
-                    <button className={styles.btnRed}>
-                      <p>Add to cart</p>
-                    </button>
-                  </div>
-                </div>
-              </div>
+            {catolouges.map((ftr, index) => (
+              <DesktopProperties
+                key={index}
+                {...ftr}
+                amount={Number(ftr.amount)}
+              />
             ))}
           </div>
+
           <div className={styles.mobileCard}>
             {mobileCard.map((feat, index) => (
               <ListingProperties

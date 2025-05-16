@@ -22,21 +22,15 @@ import star from "@/assest/image/Frame 1686561846.svg";
 import { review } from "../content-two";
 
 export const number = [
-  { txt: 45 },
-  { txt: 45 },
-  { txt: 45 },
-  { txt: 45 },
-  { txt: 45 },
-  { txt: 45 },
-  { txt: 45 },
-  { txt: 45 },
-  { txt: 45 },
-  { txt: 45 },
-  { txt: 45 },
-  { txt: 45 },
-  { txt: 45 },
-  { txt: 45 },
-  { txt: 45 },
+  { txt: 36 },
+  { txt: 38 },
+  { txt: 40 },
+  { txt: 41 },
+  { txt: 42 },
+  { txt: 44 },
+  { txt: 46 },
+  { txt: 48 },
+  { txt: 50 },
 ];
 
 const ContentOne = () => {
@@ -192,13 +186,13 @@ const ContentOne = () => {
               <p>Quantity</p>
               <div className={styles.btnSurplus}>
                 <div className={styles.indexBtn}>
-                  <p onClick={decrements}>
+                  <div onClick={decrements}>
                     <MinusIcon />
-                  </p>
+                  </div>
                   <p>{currentIndes}</p>
-                  <p onClick={increments}>
+                  <div onClick={increments}>
                     <PlusIcon />
-                  </p>
+                  </div>
                 </div>
                 <h6>
                   Only <span>15 items</span> left, dont miss out.

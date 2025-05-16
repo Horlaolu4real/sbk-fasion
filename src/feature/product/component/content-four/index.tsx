@@ -7,6 +7,7 @@ const ContentFour = () => {
   return (
     <>
       <div className={styles.wrapper}>
+        <p>Similar Product</p>
         <div className={styles.mobileCard}>
           {mobileCard.map((feat, index) => (
             <ListingProperties

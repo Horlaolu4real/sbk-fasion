@@ -5,10 +5,10 @@ import imgOne from "@/assest/image/img/Frame 1686562430 (20).svg";
 import imgTwo from "@/assest/image/img/Frame 1686562430 (21).svg";
 import imgThree from "@/assest/image/img/Frame 1686562430 (22).svg";
 import imgFour from "@/assest/image/img/Frame 1686562430 (23).svg";
+import { catolouges } from "@/feature/homepage/mobile-card";
+import DesktopProperties from "@/feature/homepage/desktop-card";
 // import { catolouges } from "@/feature/prod/component/file";
 // import { prod } from "@/feature/homepage/folder";
-import Link from "next/link";
-import { BlurStar, GoldStar } from "@/assest/icon";
 
 export const file = [
   {
@@ -64,34 +64,11 @@ const ContentThree = () => {
   return (
     <div className={styles.content}>
       <p>Similar Product</p>
-      <div className={styles.wrapper}>
-        {file.map((feat, index) => (
-          <div key={index} className={styles.item}>
-            <div className={styles.imageContent}>{feat.img}</div>
-            <div className={styles.page}>
-              <div className={styles.txt}>
-                <p>{feat.cont}</p>
-                <h3>{feat.note}</h3>
-              </div>
-              <div className={styles.rating}>
-                <div className={styles.star}>
-                  <GoldStar />
-                  <GoldStar />
-                  <GoldStar />
-                  <GoldStar />
-                  <BlurStar />
-                </div>
-                <button>
-                  <Link href={"./calculate"}>
-                    <p>Add to Cart</p>
-                  </Link>
-                </button>
-              </div>
-            </div>
-          </div>
+      <div className={styles.product}>
+        {catolouges.map((ftr, index) => (
+          <DesktopProperties key={index} {...ftr} amount={Number(ftr.amount)} />
         ))}
       </div>
-     
     </div>
   );
 };

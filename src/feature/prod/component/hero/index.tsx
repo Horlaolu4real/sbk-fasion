@@ -1,43 +1,27 @@
 import React from "react";
 import styles from "./styles.module.scss";
-import { catolouge } from "../file";
-import { BlurStar, GoldStar } from "@/assest/icon";
-import Link from "next/link";
+import { details } from "../file";
+// import { BlurStar, GoldStar } from "@/assest/icon";
+// import Link from "next/link";
 import ListingProperties from "@/feature/homepage/listing-card";
 import { mobileCard } from "@/feature/homepage/mobile-card";
+import TopProperties from "../desktop-componernt-listing";
 
 const HeroPage = () => {
   return (
     <>
       <div className={styles.content}>
         <div className={styles.delete_product_catalogue}>
-          <div className={styles.product_design}>
-            {catolouge.map((prod, index) => (
-              <div key={index} className={styles.product}>
-                <div className={styles.imgHandle}>{prod.img}</div>
-                <div className={styles.downDesign}>
-                  <div className={styles.firstContent}>
-                    <p>{prod.txt}</p>
-                    <h3> {prod.amount}</h3>
-                  </div>
-                  <div className={styles.last}>
-                    <div className={styles.flx}>
-                      <GoldStar />
-                      <GoldStar />
-                      <GoldStar />
-                      <GoldStar />
-                      <BlurStar />
-                    </div>
-                    <button className={styles.btn}>
-                      <Link href={"./detail"}>
-                        <p>Add to Cart</p>
-                      </Link>
-                    </button>
-                  </div>
-                </div>
-              </div>
+          <div className={styles.product}>
+            {details.map((ftr, index) => (
+              <TopProperties
+                key={index}
+                {...ftr}
+                amounts={Number(ftr.amounts)}
+              />
             ))}
           </div>
+
           <div className={styles.mobileCard}>
             {mobileCard.map((feat, index) => (
               <ListingProperties

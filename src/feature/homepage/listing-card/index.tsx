@@ -8,7 +8,6 @@ interface Props {
   img: StaticImageData;
   txt: string;
   naira: number;
-  btn: string;
   leftbtn: string;
 }
 
@@ -16,33 +15,30 @@ const ListingProperties: React.FC<Props> = ({
   img,
   txt,
   naira,
-  btn,
+
   leftbtn,
 }) => {
   return (
     <>
       <div className={styles.wrapper}>
-        <div className={styles.mobile_card_container}>
+        <Link href={"./shopping"}>
           <Image src={img} alt="mobile-Images" className={styles.image} />
-        </div>
-        <div className={styles.txtContent}>
-          <div className={styles.first_slides}>
-            <p>{txt}</p>
-            <h1>N{naira.toLocaleString()}</h1>
-          </div>
-          <div className={styles.second_slides}>
-            <MobileRatingIcon />
-            <div className={styles.btn}>
-              <button className={styles.viewBtn}>
-                <Link href={"./shopping"}>
-                  <p>{btn}</p>
-                </Link>
-              </button>
-              <button className={styles.addBtn}>
-                <Link href={"./detail"}>
+        </Link>
+
+        <div className={styles.content}>
+          <div className={styles.newAmount}>
+            <div className={styles.flxTxt}>
+              <h6>{txt}</h6>
+              <div className={styles.Price}>
+                <p className={styles.newPrice}>N{naira.toLocaleString()}</p>
+                <p className={styles.oldPrice}>N48,750</p>
+              </div>
+              <div className={styles.btn_row}>
+                <MobileRatingIcon />
+                <button className={styles.btn}>
                   <p>{leftbtn}</p>
-                </Link>
-              </button>
+                </button>
+              </div>
             </div>
           </div>
         </div>

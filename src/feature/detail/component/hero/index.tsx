@@ -2,20 +2,19 @@ import React from "react";
 import styles from "./styles.module.scss";
 import Image from "next/image";
 import head from "@/assest/productImage/bags.jpg";
-import { catolouge } from "@/feature/prod/component/file";
+import { details } from "@/feature/prod/component/file";
 import { mobileCard } from "@/feature/homepage/mobile-card";
 import Link from "next/link";
 
 import {
   // RightArrowIcon,
-  GoldStar,
-  BlurStar,
   CheckBackIcon,
   DropDownIcon,
   // FilterIcon,
   // WhiteDropdownIcon,
 } from "@/assest/icon";
 import ListingProperties from "@/feature/homepage/listing-card";
+import TopProperties from "@/feature/prod/component/desktop-componernt-listing";
 
 const Hero = () => {
   return (
@@ -44,31 +43,13 @@ const Hero = () => {
         </div>
 
         <div className={styles.delete_product_catalogue}>
-          <div className={styles.product_design}>
-            {catolouge.map((prod, index) => (
-              <div key={index} className={styles.product}>
-                <div className={styles.imgHandle}>{prod.img}</div>
-                <div className={styles.downDesign}>
-                  <div className={styles.firstContent}>
-                    <p>{prod.txt}</p>
-                    <h3> {prod.amount}</h3>
-                  </div>
-                  <div className={styles.last}>
-                    <div className={styles.flx}>
-                      <GoldStar />
-                      <GoldStar />
-                      <GoldStar />
-                      <GoldStar />
-                      <BlurStar />
-                    </div>
-                    <button className={styles.btn}>
-                      <Link href={"./calculate"}>
-                        <p>Add to Cart</p>
-                      </Link>
-                    </button>
-                  </div>
-                </div>
-              </div>
+          <div className={styles.product}>
+            {details.map((ftr, index) => (
+              <TopProperties
+                key={index}
+                {...ftr}
+                amounts={Number(ftr.amounts)}
+              />
             ))}
           </div>
           <div className={styles.mobileCard}>
