@@ -7,7 +7,9 @@ import {
   DarkDropIcon,
   LeftAIcon,
   MinusIcon,
+  MinusIcons,
   PlusIcon,
+  PlusIcons,
   // MinusIcon,
   // PlusIcon,
   RedBinIcon,
@@ -200,12 +202,12 @@ const TableRow = () => {
                 <div className={styles.sizeChange}>
                   <div onClick={decrease}>
                     {" "}
-                    <MinusIcon />
+                    <MinusIcons />
                   </div>
                   <p>{mobileIndex}</p>
                   <div onClick={increase}>
                     {" "}
-                    <PlusIcon />
+                    <PlusIcons />
                   </div>
                 </div>
               </div>

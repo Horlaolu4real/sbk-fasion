@@ -86,11 +86,14 @@
         .btn {
           width: 225px;
           height: 43px;
-          border-radius: 15px;
+          border-radius: 4px;
           padding: 10px;
           background-color: #db5825;
           outline: none;
           border: 1px solid #db5825;
+          @media (max-width: 768px) {
+            border-radius: 4px;
+          }
           p {
             font-family: Manrope;
             font-weight: 500;
@@ -102,6 +105,8 @@
             justify-content: center;
             text-align: center;
             vertical-align: middle;
+            @media (max-width: 768px) {
+            }
           }
         }
       }

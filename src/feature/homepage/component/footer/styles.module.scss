@@ -32,6 +32,7 @@
       @media (max-width: 768px) {
         height: 152px;
         width: 287px;
+        gap: 8px;
       }
       p {
         font-family: Roboto Serif;
@@ -79,6 +80,7 @@
         @media (max-width: 768px) {
           width: 172px;
           height: 33px;
+          border-radius: 4px;
         }
         p {
           width: 142px;

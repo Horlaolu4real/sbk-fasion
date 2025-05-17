@@ -7,7 +7,9 @@ import {
   GoldStar,
   LeftGrayIcon,
   MinusIcon,
+  MinusIcons,
   PlusIcon,
+  PlusIcons,
   RedIcon,
   RightDarkIcon,
 } from "@/assest/icon";
@@ -20,6 +22,8 @@ import imgThree from "@/assest/image/detail/effecthree.jpg";
 import imgFour from "@/assest/image/detail/effectfour.jpg";
 import star from "@/assest/image/Frame 1686561846.svg";
 import { review } from "../content-two";
+import smallerImg from "@/assest/image/product/Frame 1686561846 (4).svg";
+import ContentThree from "../content-three";
 
 export const number = [
   { txt: 36 },
@@ -194,6 +198,15 @@ const ContentOne = () => {
                     <PlusIcon />
                   </div>
                 </div>
+                <div className={styles.indexBtns}>
+                  <div onClick={decrements}>
+                    <MinusIcons />
+                  </div>
+                  <p>{currentIndes}</p>
+                  <div onClick={increments}>
+                    <PlusIcons />
+                  </div>
+                </div>
                 <h6>
                   Only <span>15 items</span> left, dont miss out.
                 </h6>
@@ -221,8 +234,13 @@ const ContentOne = () => {
             <div className={styles.contentTwo}>
               <h3>Ratings</h3>
               <div className={styles.ratingStyle}>
-                <div>
-                  <Image src={star} alt="star" />
+                <div className={styles.icons}>
+                  <Image src={star} alt="star" className={styles.desktop} />
+                  <Image
+                    src={smallerImg}
+                    alt="star"
+                    className={styles.mobile}
+                  />
                 </div>
                 <div className={styles.reviewLine}>
                   <div className={styles.line}>
@@ -255,6 +273,7 @@ const ContentOne = () => {
             </div>
           </div>
         </div>
+        <ContentThree />
       </div>
     </>
   );
