@@ -1,8 +1,10 @@
 .wrapper {
   width: 100%;
   height: 727px;
+  margin-top: 40px;
   @media (max-width: 768px) {
     height: 574px;
+    margin-top: 0px;
   }
   .contentOne {
     background-image: url("../../../../../public/footerImage.jpg");
@@ -17,7 +19,7 @@
     flex-direction: column;
     justify-content: center;
     @media (max-width: 768px) {
-      height: 209px;
+      height: 250px;
       padding-top: 1em;
       padding-bottom: 35px;
     }
@@ -41,8 +43,10 @@
         line-height: 100%;
         letter-spacing: 0%;
         color: #fff;
+        margin-bottom: 15px;
         @media (max-width: 768px) {
-          font-size: 14px;
+          font-size: 16px;
+          margin-bottom: 5px;
         }
       }
       .txt {
@@ -56,49 +60,50 @@
           font-family: Roboto Serif;
           font-weight: 700;
           font-size: 64px;
-          line-height: 100%;
+          line-height: 70px;
           letter-spacing: 0%;
           text-align: center;
           text-transform: capitalize;
           color: #ffffff;
           @media (max-width: 768px) {
             font-size: 24px;
+            line-height: 32px;
           }
         }
       }
       button {
-        width: 162px;
-        height: 43px;
-        border-radius: 15px;
-        padding: 10px;
+        // width: 162px;
+        // height: 43px;
+        border-radius: 10px;
+        padding: 15px 40px;
         outline: none;
         background-color: #db5825;
         border: 1px solid #db5825;
         display: flex;
         justify-content: center;
         align-items: center;
+        font-family: Manrope;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 100%;
+          letter-spacing: 0%;
+          color: #fff;
+          margin-top: 0px;
+          cursor: pointer;
+
         @media (max-width: 768px) {
-          width: 172px;
-          height: 33px;
+          // width: 172px;
+          // height: 33px;
+          padding: 10px 25px;
           border-radius: 4px;
-        }
-        p {
-          width: 142px;
-          height: 22px;
           font-family: Manrope;
           font-weight: 500;
           font-size: 16px;
           line-height: 100%;
           letter-spacing: 0%;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          text-align: align;
-          // vertical-align: middle;
-          @media (max-width: 768px) {
-          }
-          font-size: 16px;
+          margin-top: 10px;
         }
+        
       }
     }
   }
@@ -177,6 +182,7 @@
             background-color: #db5825;
             border-radius: 6px;
             border: 0px;
+            cursor: pointer;
             p {
               width: 74px;
               height: 29px;

@@ -25,7 +25,7 @@ const Footer = () => {
             </div>
             <button>
               <Link href={"/detail"}>
-                <p>Shop Our Products</p>
+                Shop Our Products
               </Link>
             </button>
           </div>

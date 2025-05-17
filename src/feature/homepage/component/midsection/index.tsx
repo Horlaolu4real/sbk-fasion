@@ -21,16 +21,16 @@ const Midsection = () => {
         </div>
         <div className={styles.container}>
           <div className={styles.img}>
-            <Image src={imgOne} alt="img1" className={styles.imag} />
+            <Image src={imgOne} alt="img1" width={200} height={200} className={styles.imag} />
             <div className={styles.btns}>
               <button className={styles.btnOne}>
-                <p>New Arrivals</p>
+                New Arrivals
               </button>
               <button className={styles.btnTwo}>
-                <p>Best Selling</p>
+                Best Selling
               </button>
               <button className={styles.btnThree}>
-                <p>Top Rating</p>
+                Top Rating
               </button>
             </div>
           </div>
@@ -43,7 +43,6 @@ const Midsection = () => {
               />
             ))}
           </div>
-
           <div className={styles.mobileCard}>
             {mobileCard.map((feat, index) => (
               <ListingProperties
