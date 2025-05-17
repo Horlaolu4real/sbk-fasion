@@ -34,9 +34,9 @@ const ListingProperties: React.FC<Props> = ({
                 <p className={styles.oldPrice}>N48,750</p>
               </div>
               <div className={styles.btn_row}>
-                <MobileRatingIcon />
+                <MobileRatingIcon className={styles.icon} />
                 <button className={styles.btn}>
-                  <p>{leftbtn}</p>
+                  {leftbtn}
                 </button>
               </div>
             </div>

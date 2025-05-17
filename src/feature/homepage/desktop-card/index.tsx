@@ -26,13 +26,14 @@ const DesktopProperties: React.FC<Props> = ({ imag, text, amount, leftbt }) => {
                 <p className={styles.newPrice}>N{amount.toLocaleString()}</p>
                 <p className={styles.oldPrice}>N49,750</p>
               </div>
-              <div>
-                <DesktopRatingIcon />
+              <div className={styles.desk}>
+                <DesktopRatingIcon className={styles.icon_desktop} />
+                <button className={styles.btn}>
+              {leftbt}
+            </button>
               </div>
             </div>
-            <button className={styles.btn}>
-              <p>{leftbt}</p>
-            </button>
+           
           </div>
         </div>
       </div>
