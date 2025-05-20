@@ -8,20 +8,17 @@ const Hero = () => {
       <div className={styles.hero}>
         <div className={styles.fullWidth}>
           <div className={styles.text}>
-            <p className={styles.header}>
+            <h1 className={styles.header}>
               Your New Favourite Look is Just a Click Away.
-            </p>
-          </div>
-
-          <div className={styles.para}>
+            </h1>
             <p>
-              Step into the season hottest trends at unbeatable prices. Don’t
+              Step into the season hottest trends at unbeatable prices. Don&apos;t
               miss out- Shop your favourites now!
             </p>
             <div className={styles.btnField}>
               <button className={styles.btn}>
                 <Link href={"./detail"}>
-                  <p>Shop Now</p>
+                  Shop Now
                 </Link>
               </button>
             </div>

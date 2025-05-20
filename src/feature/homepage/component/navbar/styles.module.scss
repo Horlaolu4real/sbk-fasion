@@ -1,31 +1,18 @@
 .content {
-  position: relative;
+  // position: relative;
   max-width: 1440px;
   margin: 0 auto;
-
-  // width: 100%;
-  .img {
-    position: absolute;
-    left: 0;
-    z-index: -1;
-    top: 0;
-    transform: none !important;
-    @media (max-width: 768px) {
-      width: 91px;
-      height: 73px;
-      left: 0;
-    }
-  }
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: #fff;
 
   .Navbar {
     width: 100%;
-
-    // max-width: 1321px;
-    // height: 71.66px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 50px;
+    padding: 10px 50px;
     @media (max-width: 768px) {
       padding: 6px 16px;
     }
@@ -36,7 +23,10 @@
       }
     }
     .link {
+
       .headerImg {
+        width: 200px;
+        height: unset !important;
         @media (max-width: 768px) {
           width: 112px;
           height: 28px;
@@ -45,9 +35,9 @@
     }
 
     .list {
-      width: 446px;
+      // width: 446px;
       // height: 23px;
-      height: 26px;
+      // height: 26px;
       @media (max-width: 768px) {
         display: none;
       }
@@ -108,7 +98,7 @@
     }
     .input {
       display: flex;
-      gap: 26px;
+      gap: 20px;
       align-items: center;
 
       .inputField {
@@ -129,7 +119,6 @@
         }
         .searchIcon {
           position: absolute;
-
           right: 18px;
           width: 16px;
           height: 16px;
@@ -139,9 +128,10 @@
       }
       .icon {
         display: flex;
+        align-items: center;
         gap: 16px;
-        width: 79px;
-        height: 32px;
+        // width: 79px;
+        // height: 32px;
       }
     }
   }

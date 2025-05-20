@@ -8,6 +8,7 @@ import Image from "next/image";
 const Slides = () => {
   return (
     <>
+    <div className={styles.wrapper}>
       <div className={styles.container}>
         <div className={styles.slides}>
           {slides.map((prod, index) => (
@@ -36,6 +37,7 @@ const Slides = () => {
             </div>
           ))}
         </div>
+      </div>
       </div>
     </>
   );
