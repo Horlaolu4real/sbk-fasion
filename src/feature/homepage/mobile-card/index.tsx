@@ -14,7 +14,6 @@ import fourth from "@/assest/image/image-delete/coverFour.jpg";
 import fifth from "@/assest/image/image-delete/coverFive.jpg";
 import sixth from "@/assest/image/image-delete/coverSix.jpg";
 import seventh from "@/assest/image/image-delete/coverSeven.jpg";
-// import eigth from "@/assest/image/image-delete/coverEight.jpg";
 
 export const mobileCard = [
   {

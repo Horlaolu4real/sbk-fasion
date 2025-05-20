@@ -1,59 +1,96 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import styles from "./styles.module.scss";
-// import { prod } from "@/feature/homepage/folder";
 import imgOne from "@/assest/image/detail/cover.jpg";
-import { catolouges } from "../../mobile-card";
-// import Link from "next/link";
-import { mobileCard } from "../../mobile-card";
-
 import Image from "next/image";
-// import { BlurStar, GoldStar } from "@/assest/icon";
-import Slides from "../slides";
-import ListingProperties from "../../listing-card";
-import DesktopProperties from "../../desktop-card";
+import { listCard } from "@/components/data";
+import Card from "@/components/card";
 
 const Midsection = () => {
+  const [activeCategory, setActiveCategory] = useState<string>("new arrivals"); 
+  const [displayCount, setDisplayCount] = useState<number>(8); 
+
+  const filteredProducts =
+    activeCategory === "all"
+      ? listCard
+      : listCard.filter((product) => product.category === activeCategory);
+
+      const displayedProducts = filteredProducts.slice(0, displayCount);
+
+      // const loadMore = () => {
+      //   setDisplayCount(prev => prev + 8); 
+      // };
+
   return (
     <>
       <div className={styles.content}>
         <div className={styles.header}>
-          <h1>A Touch of brillance for every look</h1>
+          <h1>A Touch of brilliance for every look</h1>
         </div>
         <div className={styles.container}>
           <div className={styles.img}>
-            <Image src={imgOne} alt="img1" width={200} height={200} className={styles.imag} />
+            <Image
+              src={imgOne}
+              alt="img1"
+              width={200}
+              height={200}
+              className={styles.imag}
+            />
             <div className={styles.btns}>
-              <button className={styles.btnOne}>
+              <button
+                className={`${styles.btnOne} ${activeCategory === "new arrivals" ? styles.active : ""}`}
+                onClick={() => {
+                  setActiveCategory("new arrivals");
+                  setDisplayCount(8);
+                }}
+              >
                 New Arrivals
               </button>
-              <button className={styles.btnTwo}>
+              <button
+                className={`${styles.btnTwo} ${
+                  activeCategory === "best selling" ? styles.active : ""
+                }`}
+                onClick={() => {
+                  setActiveCategory("best selling");
+                  setDisplayCount(8);
+                }}
+              >
                 Best Selling
               </button>
-              <button className={styles.btnThree}>
+              <button
+                className={`${styles.btnThree} ${
+                  activeCategory === "top selling" ? styles.active : ""
+                }`}
+                onClick={() => {
+                  setActiveCategory("top selling");
+                  setDisplayCount(8);
+                }}
+              >
                 Top Rating
               </button>
             </div>
           </div>
-          <div className={styles.product}>
-            {catolouges.map((ftr, index) => (
-              <DesktopProperties
+          <div className={styles.card_wrapper}>
+            {displayedProducts.map((feat, index) => (
+              <Card
                 key={index}
-                {...ftr}
-                amount={Number(ftr.amount)}
+                img={feat.img}
+                name={feat.name}
+                oldPrice={feat.old}
+                newPrice={feat.new}
               />
             ))}
           </div>
-          <div className={styles.mobileCard}>
-            {mobileCard.map((feat, index) => (
-              <ListingProperties
-                key={index}
-                {...feat}
-                naira={Number(feat.naira)}
-              />
-            ))}
+          {/* {filteredProducts.length > displayCount && (
+          <div className={styles.loadMoreContainer}>
+            <button 
+              className={styles.loadMoreBtn}
+              onClick={loadMore}
+            >
+              Load More
+            </button>
           </div>
-
-          <Slides />
+        )} */}
         </div>
       </div>
     </>

@@ -1,12 +1,11 @@
 "use client";
-
 import { CartIcon, HamburgerIcon, LoveIcon, SearchIcon } from "@/assest/icon";
 import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { FaTimes } from "react-icons/fa";
 import frames from "@/assest/image/Frame 1686562473.svg";
-import navImage from "@/assest/image/Group 1000005944.svg";
+// import navImage from "@/assest/image/Group 1000005944.svg";
 import styles from "./styles.module.scss";
 
 const Navbar: React.FC = () => {
@@ -14,19 +13,15 @@ const Navbar: React.FC = () => {
 
   return (
     <div className={styles.content}>
-      <Image src={navImage} alt="image" className={styles.img} />
-
       <div className={styles.Navbar}>
         <div className={styles.hamburg} onClick={() => setShowMenu(true)}>
           <HamburgerIcon />
         </div>
-
         <div className={styles.link}>
           <Link href={"/"}>
-            <Image src={frames} alt="frame" className={styles.headerImg} />
+            <Image src={frames} alt="frame" width={200} height={200} className={styles.headerImg} />
           </Link>
         </div>
-
         <div className={styles.list}>
           <ul>
             <li className={styles.home}>
